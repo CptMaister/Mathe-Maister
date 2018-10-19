@@ -1,0 +1,63 @@
+Inhaltsverzeichnis, neue Einträge bitte passend einordnen:
+1.0 Analysis
+2.0 Lineare Algebra
+3.0 Algebra
+4.0 Geometrie
+5.0 Numerik
+6.0 Optimierung
+
+Ungefähr an folgendes Format halten:
+Name (Typ, [Gebiet])
+Beschreibung
+
+-----
+
+1.0 Analysis
+
+vollständig (Def., Topologie / Normierte Räume)
+Ein metrischer Raum, der ????
+
+
+2.0 Lineare Algebra
+
+Skalarprodukt (Def.)
+Eine Abbildung, die bilinear, positiv definit und symmetrisch ist.
+
+orthogonale Abbildung (Def.)
+
+selbstadjungierte Abbildung (Def.)
+
+Symmetrische Gruppe (Def.)
+
+Kreuzprodukt (Formel)
+
+
+3.0 Algebra
+
+transzendent (Def.)
+
+
+4.0 Geometrie
+
+Kurvenlänge L(alpha) (Formel, Lokale Kurventheorie)
+
+Krümmung k(s) (Formel, Lokale Kurventheorie)
+
+Torsion tau(s) (Formel, Lokale Kurventheorie)
+
+Frenet-Dreibein (???, Lokale Kurventheorie)
+
+Schmiegeebene (Def., Lokale Kurventheorie)
+
+Normalenebene (Def., Lokale Kurventheorie)
+
+Frenet-Formeln (Formel, Lokale Kurventheorie)
+
+
+5.0 Numerik
+
+
+6.0 Optimierung
+
+...
+
