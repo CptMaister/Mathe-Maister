@@ -23,13 +23,13 @@ Ein metrischer Raum, der ????
 Skalarprodukt (Def.)
 Eine Abbildung, die bilinear, positiv definit und symmetrisch ist.
 
+Kreuzprodukt / Vektorprodukt (Formel)
+
 orthogonale Abbildung (Def.)
 
 selbstadjungierte Abbildung (Def.)
 
 Symmetrische Gruppe (Def.)
-
-Kreuzprodukt (Formel)
 
 
 3.0 Algebra
@@ -39,9 +39,26 @@ transzendent (Def.)
 
 4.0 Geometrie
 
-Kurvenlänge L(alpha) (Formel, Lokale Kurventheorie)
+Kurve (Def., Lokale Kurventheorie)
+Eine glatte Abbildung von (a, b) nach R^3
+
+Kurvenlänge L(\alpha) (Formel, Lokale Kurventheorie)
+L(\alpha) = $\int_{a}^{b} |\alpha'(t)| dt$ 
+
+Umparametrisierung phi (Def., Lokale Kurventheorie)
+Kurve von (a, b) \to \mathbb{R}^3, Diffeomorphismus von J nach (a, b)
+
+regulär (Def., Lokale Kurventheorie)
+Kurve $\alpha:I \to \mathbb{R}^3$ mit Ableitung \neq für alle t
+
+nach Bogenlänge parametrisiert (Def., Lokale Kurventheorie)
+Kurve $\alpha mit |\alpha '(s)| = 1 \forall s\in I$
 
 Krümmung k(s) (Formel, Lokale Kurventheorie)
+\alpha parametrisiert nach Bogenlänge, |\alpha ''(s)|
+
+Krümmungsradius (Def., Lokale Kurventheorie)
+1 / k(s) von allgemeiner Kurve \alpha
 
 Torsion tau(s) (Formel, Lokale Kurventheorie)
 
