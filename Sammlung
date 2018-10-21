@@ -6,8 +6,8 @@ Inhaltsverzeichnis, neue Einträge bitte passend einordnen:
 5.0 Numerik
 6.0 Optimierung
 
-Ungefähr an folgendes Format halten:
-Name (Typ, [Gebiet])
+Ungefähr an folgendes Format halten und den Namen nicht in der Beschreibung erwähnen:
+Name (Typ, Gebiet)
 Beschreibung
 
 -----
@@ -55,20 +55,43 @@ nach Bogenlänge parametrisiert (Def., Lokale Kurventheorie)
 Kurve $\alpha mit |\alpha '(s)| = 1 \forall s\in I$
 
 Krümmung k(s) (Formel, Lokale Kurventheorie)
-\alpha parametrisiert nach Bogenlänge, |\alpha ''(s)|
+\alpha parametrisiert nach Bogenlänge: |\alpha ''(s)|
 
 Krümmungsradius (Def., Lokale Kurventheorie)
 1 / k(s) von allgemeiner Kurve \alpha
 
-Torsion tau(s) (Formel, Lokale Kurventheorie)
+Tangentialvektor t(s) von Kurve \alpha (Def., Lokale Kurventheorie)
+\alpha '(s)
 
-Frenet-Dreibein (???, Lokale Kurventheorie)
+Normalenvektor n(s) von Kurve \alpha (Def., Lokale Kurventheorie)
+\alpha ''(s) / |\alpha ''(s)|
+
+Binormalenvektor b(s) von Kurve \alpha (Def., Lokale Kurventheorie)
+t(s) x n(s)
+
+Frenet-Dreibein (Def., Lokale Kurventheorie)
+t(s), n(s), b(s), pos. orientierte ON-Basis des \mathbb{R}^3 an Kurve \alpha in s
 
 Schmiegeebene (Def., Lokale Kurventheorie)
+t-n-Ebene
 
 Normalenebene (Def., Lokale Kurventheorie)
+n-b-Ebene
+
+Torsion tau(s) (Formel, Lokale Kurventheorie)
+|b'(s)|, Geschwindigkeit, mit der sich die Schmiegeebene der Kurve \alpha dreht
 
 Frenet-Formeln (Formel, Lokale Kurventheorie)
+t'(s) = k(s) n(s)
+n'(s) = -k(s) t(s) -\tau (s) b(s)
+b'(s) = \tau (s) n(s)
+
+Euklidische Bewegung (Def., Lokale Kurventheorie)
+Eine Abbildung \mathbb{R}^3 \to \mathbb{R}^3, die Abstände erhält, d.h. |M(p) - M(q)| = |p-q| \forall p,q \in \mathbb{R}^3
+
+Hauptsatz der lokalen Kurventheorie (Satz, Lokale Kurventheorie)
+(a) Zu glatter Funktion ... (von Jeremys Skript rausnatzen)
+(b) ii
 
 
 5.0 Numerik
