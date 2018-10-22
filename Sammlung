@@ -78,12 +78,12 @@ t-n-Ebene
 Normalenebene (Def., Lokale Kurventheorie)
 n-b-Ebene
 
-Torsion tau(s) (Formel, Lokale Kurventheorie)
+Torsion |tau(s)| (Formel, Lokale Kurventheorie)
 |b'(s)|, Geschwindigkeit, mit der sich die Schmiegeebene der Kurve \alpha dreht
 
 Frenet-Formeln (Formel, Lokale Kurventheorie)
 t'(s) = k(s) n(s)
-n'(s) = -k(s) t(s) -\tau (s) b(s)
+n'(s) = -k(s) t(s) +\tau (s) b(s)
 b'(s) = \tau (s) n(s)
 
 Euklidische Bewegung (Def., Lokale Kurventheorie)
