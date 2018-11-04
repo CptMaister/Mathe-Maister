@@ -3,9 +3,9 @@ Inhaltsverzeichnis, neue Einträge bitte möglichst passend einordnen (falls kei
 1.0 Analysis
    1.1 Analysis I (ETA: Neujahr)
    1.2 Analysis II (ETA: N/A)
-   1.3 Analysis III (läuft)
+   1.3 Analysis III (ETA: demnächst (nach 15.11.))
 2.0 Algebra
-   2.1 Lineare Algebra I (ETA: demnächst)
+   2.1 Lineare Algebra I (ETA: demnächst (nach 15.11.))
    2.2 Lineare Algebra II (ETA: Weihnachten)
    2.3 Einführung in die Algebra (ETA: N/A)
 3.0 Geometrie (läuft)
@@ -15,7 +15,7 @@ Inhaltsverzeichnis, neue Einträge bitte möglichst passend einordnen (falls kei
 Ungefähr an folgendes Format halten mit diesen Hinweisen:
  - den Namen nicht in der Beschreibung erwähnen, Name immer mit großem Buchstaben anfangen, auch wenn es ein Adjektiv ist
  - Beschreibung (und andere Teile) nicht mehrzeilig hier eintragen. Für Zeilenumbruch \\ benutzen, wie beim Eintrag der Frenet-Formeln
- - Fun Facts und Beispiele optional, nutze den Bereich Fun Facts für Formeln innerhalb von Definitionen und Beweisideen
+ - Fun Facts und Beispiele optional, nutze den Bereich Fun Facts für Formeln innerhalb von Definitionen, Verständnishilfen und Beweisideen
  
 Name (Typ, Gebiet)
 Beschreibung
@@ -229,28 +229,30 @@ $w(\alpha) := \frac{1}{2\pi} \int_{\alpha} \vartheta = \frac{1}{2\pi} \int_{\alp
 Windungszahl von $\alpha \to \mathbb{R}^2$ um $p \in \mathbb{R} \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
 $w(\alpha, p)$ := $w(\alpha - p)$ mit $(\alpha, p)(t)$ := $\alpha(t) - p \neq 0$
 
-(, Globale Theorie ebener Kurven)
+(Weg)Zusammenhangskomponente von $\mathbb{R} \setminus bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
+Eine maximale (weg)zusammenhängende Teilmenge von $\mathbb{R} \setminus bild(\alpha)$
+Windungszahl aller Punkte einer Zusammenhangskomponente ist konstant
+
+Jordanscher Kurvensatz für glatte Kurven (Satz, Globale Theorie ebener Kurven)
+$\alpha: [a, b] \to \mathbb{R}^2$ einfach geschlossene reguläre glatte Kurve. Dann hat $\mathbb{R}^2 \setminus Bild(\alpha)$ genau zwei Zusammenhangskomponenten: $U_0$: unbeschränkt, $w(\alpha, U_0) = 0$ und $U_1$: beschränkt, $w(\alpha, U_1) = \pm 1$
+
+einfache Kurve (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha: [a, b] \to \mathbb{R}^2$, $\alpha(s) = \alpha(t), s < t \Rightarrow s = a, t = b$
+also keine Kreuzungen
+
+Rotationszahl einer Kurve $\alpha$ (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha: [a, b] \to \mathbb{R}^2$ reguläre geschlossene Kurve. $r(\alpha) := w(\alpha') \in \mathbb{Z}$
+entspricht Anzahl der Rotationen des Geschwindigkeitsvektors, wenn wir $\alpha$ durchlaufen. Ist \alpha nach Bogenlänge parametrisierte geschlossene Kurve, dann ist $r(\alpha) = \frac{1}{2\pi} \int_{a}^{b} k(s) \; ds$
+
+Einheitskreis (Def., Globale Theorie ebener Kurven)
+$S^1 = \{u \in \mathbb{R}^2 \> | \> |u| = 1\}
+
+
+bis 31.10.18
 
 
 (, Globale Theorie ebener Kurven)
 
-
-(, Globale Theorie ebener Kurven)
-
-
-(, Globale Theorie ebener Kurven)
-
-
-(, Globale Theorie ebener Kurven)
-
-
-(, Globale Theorie ebener Kurven)
-
-
-(, Globale Theorie ebener Kurven)
-
-
-(, Globale Theorie ebener Kurven)
 
 
 
