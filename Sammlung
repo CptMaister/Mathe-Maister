@@ -199,21 +199,50 @@ $\alpha_0, \alpha_1:[a, b] \to U$ homotope geschlossene Kurven, $U \subset \math
 Interpretation für Physiker: egal, welcher Weg, die Arbeit bleibt gleich.
 
 Wegzusammenhängend (Def., Globale Theorie ebener Kurven)
+$U \in \mathbb{R}^2$ offen, falls je zwei Punkte $p, q \in U$ durch eine glatte Kurve in $U$ verbunden werden können.
+
+Einfach zusammenhängend (Def., Globale Theorie ebener Kurven)
+$U \in \mathbb{R}^2$ offen, wegzusammenhängend und jede geschlossene Kurve in $U$ homotop zu einer konstanten Kurve.
+
+Konstante Kurve (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha:[a, b] \to \mathbb{R}^n$ mit $\alpha(t) = p \> \forall t$
+
+$U \subset \mathbb{R}^2$ Sternförmig bzgl $p \in U$ (Def., Globale Theorie ebener Kurven) ~~~
+Sei $p \in U$, $\forall q \in U \subset \mathbb{R}^2$ liegt die Strecke von $p$ nach $q$ ganz in $U$
+Ist $U$ sternförmig bzgl einem enthaltenen Punkt, so ist $U$ auch einfach zusammenhängend.
+
+Vektorfeld $\vartheta$ mit $rot \; \vartheta = 0$ (Hilfsdef. / Formel, Globale Theorie ebener Kurven) ~~~
+$\vartheta(x, y) := (\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2})$
+$rot \; \vartheta = \partial x (\frac{x}{x^2 + y^2}) - \partial y (\frac{-y}{x^2 + y^2}) = 0$
+
+Windungszahl von geschlossener Kurve $\alpha:[a, b] \to \mathbb{R}^2 \setminus \{0\}$ um den Ursprung $0$ (Def. / Formel, Globale Theorie ebener Kurven)
+$w(\alpha) := \frac{1}{2\pi} \int_{\alpha} \vartheta = \frac{1}{2\pi} \int_{\alpha} \frac{xdy - ydx}{x^2 + y^2} ~~~
+
+Windungszahl von $\alpha \to \mathbb{R}^2$ um $p \in \mathbb{R} \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
+$w(\alpha, p)$ := $w(\alpha - p)$ mit $(\alpha, p)(t)$ := $\alpha(t) - p \neq 0$
+
+(, Globale Theorie ebener Kurven)
 
 
 (, Globale Theorie ebener Kurven)
 
-(, Globale Theorie ebener Kurven)
-
-(, Globale Theorie ebener Kurven)
-
-(, Globale Theorie ebener Kurven)
-
-(, Globale Theorie ebener Kurven)
 
 (, Globale Theorie ebener Kurven)
 
 
+(, Globale Theorie ebener Kurven)
+
+
+(, Globale Theorie ebener Kurven)
+
+
+(, Globale Theorie ebener Kurven)
+
+
+(, Globale Theorie ebener Kurven)
+
+
+(, Globale Theorie ebener Kurven)
 
 
 
