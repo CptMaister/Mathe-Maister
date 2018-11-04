@@ -1,16 +1,16 @@
 Inhaltsverzeichnis, neue Einträge bitte möglichst passend einordnen (falls keine Ahnung, einfach in 0.0 rein, wird dann von jemandem einsortiert):
 0.0 Mathe Basics
 1.0 Analysis
-   1.1 Analysis I
-   1.2 Analysis II
-   1.3 Analysis III
+   1.1 Analysis I (ETA: Weihnachten)
+   1.2 Analysis II (ETA: N/A)
+   1.3 Analysis III (läuft)
 2.0 Algebra
-   2.1 Lineare Algebra I
-   2.2 Lineare Algebra II
-   2.3 Einführung in die Algebra
-3.0 Geometrie
-4.0 Numerik
-5.0 Optimierung
+   2.1 Lineare Algebra I (ETA: demnächst)
+   2.2 Lineare Algebra II (ETA: Neujahr)
+   2.3 Einführung in die Algebra (ETA: N/A)
+3.0 Geometrie (läuft)
+4.0 Numerik (läuft, eher nur Formelsammlung)
+5.0 Optimierung (ETA: N/A)
 
 Ungefähr an folgendes Format halten mit diesen Hinweisen:
  - den Namen nicht in der Beschreibung erwähnen, Name immer mit großem Buchstaben anfangen, auch wenn es ein Adjektiv ist
@@ -76,6 +76,10 @@ Mengenalgebra (Def., )
 
 Skalarprodukt (Def.)
 Eine Abbildung, die bilinear, positiv definit und symmetrisch ist.
+
+Norm
+
+Schwarzsche Ungleichung
 
 Kreuzprodukt / Vektorprodukt (Formel)
 
