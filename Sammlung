@@ -242,7 +242,7 @@ also keine Kreuzungen
 
 Rotationszahl einer Kurve $\alpha$ (Def., Globale Theorie ebener Kurven)
 Kurve $\alpha: [a, b] \to \mathbb{R}^2$ reguläre geschlossene Kurve. $r(\alpha) := w(\alpha') \in \mathbb{Z}$
-entspricht Anzahl der Rotationen des Geschwindigkeitsvektors, wenn wir $\alpha$ durchlaufen. Ist \alpha nach Bogenlänge parametrisierte geschlossene Kurve, dann ist $r(\alpha) = \frac{1}{2\pi} \int_a^b k(s) \; ds$
+entspricht Anzahl der Rotationen des Geschwindigkeitsvektors, wenn wir $\alpha$ durchlaufen. Ist \alpha nach Bogenlänge parametrisierte geschlossene Kurve, dann ist $r(\alpha) = \frac{1}{2\pi} \int_{a}^{b} k(s) \; ds$
 
 Einheitskreis (Def., Globale Theorie ebener Kurven)
 $S^1 = \{u \in \mathbb{R}^2 \> | \> |u| = 1\}
