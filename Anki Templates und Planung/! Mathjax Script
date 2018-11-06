@@ -1,7 +1,11 @@
-nach https://niklaskorz.de/2017/06/studying-mathematics-with-anki-and-mathjax.html
+Code von https://niklaskorz.de/2017/06/studying-mathematics-with-anki-and-mathjax.html
 
 Funktioniert bei Ankiweb und AnkiDroid (getestet mit 2.8.5), irgendwie nicht auf Desktop Anki, vielleicht auf auch auf Anki iOS (??).
-Noch ungeklärt: Welche packages unterstützt, welche Geräte unterstützt außer AnkiDroid, wie auf AnkiDesktop zum laufen bringen
+
+Noch ungeklärt/ungetestet: 
+  Welche LaTeX-packages unterstützt?
+  Wie auf AnkiDesktop zum laufen bringen (laut obiger Seite sollte es gehen)?
+  Muss jede Karte 1x online aufm Handy angesehen werden, bevor es auch offline funktioniert?
 
 Folgendes ans Ende jeder Vorder- und Rückseite einfügen, damit der TeX-Code schön wird:
 
