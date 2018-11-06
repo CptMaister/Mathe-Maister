@@ -1,4 +1,4 @@
-Satzname -> ganzer Satz
+Satzname -> ganzer Satz:
 
 
 
@@ -6,7 +6,7 @@ Satzname -> ganzer Satz
 
 
 ----------------------------------------
-Voraussetzungen -> Folgerung + Name
+Voraussetzungen -> Folgerung + Name:
 
 
 
@@ -14,7 +14,7 @@ Voraussetzungen -> Folgerung + Name
 
 
 ----------------------------------------
-Folgerung -> Voraussetzungen + Name
+Folgerung -> Voraussetzungen + Name:
 
 
 
