@@ -1,0 +1,26 @@
+Felder aller Notiztypen:
+Name
+Beschreibung
+Typ
+Vorlesung
+Themengebiet
+FunFacts
+Beispiele
+Extras
+Notizen
+
+Notiztyp: Mathe-Maister (Definitionen)
+Karten: 2
+  Name -> Def
+  Def -> Name
+
+Notiztyp: Mathe-Maister (Sätze)
+Karten: 3
+  Satzname -> ganzer Satz mit Voraussetzungen und Folgerung; 
+  Voraussetzungen -> Folgerung + Name;
+  Folgerung (+ Name?) -> Voraussetzungen + Name
+
+
+
+
+
