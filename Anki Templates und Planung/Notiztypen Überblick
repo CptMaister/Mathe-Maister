@@ -1,4 +1,6 @@
-Felder aller Notiztypen:
+Notiztyp: Mathe-Maister Definition
+
+Felder:
 Name
 Beschreibung
 Typ
@@ -9,13 +11,27 @@ Beispiele
 Extras
 Notizen
 
-Notiztyp: Mathe-Maister (Definitionen)
 Karten: 2
   Name -> Def
   Def -> Name
 
-Notiztyp: Mathe-Maister (Sätze)
-Karten: 3
+----------------------
+
+Notiztyp: Mathe-Maister Satz (bisher noch nicht anders als Definition eingesetzt)
+
+Felder:
+Name
+Satzvoraussetzungen
+Satzfolgerungen
+Typ
+Vorlesung
+Themengebiet
+FunFacts
+Beispiele
+Extras
+Notizen
+
+Karten: 3 ???
   Satzname -> ganzer Satz mit Voraussetzungen und Folgerung; 
   Voraussetzungen -> Folgerung + Name;
   Folgerung (+ Name?) -> Voraussetzungen + Name
