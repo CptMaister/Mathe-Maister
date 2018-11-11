@@ -232,7 +232,9 @@ $\vartheta(x, y) := (\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2})$
 $rot \; \vartheta = \partial x (\frac{x}{x^2 + y^2}) - \partial y (\frac{-y}{x^2 + y^2}) = 0$
 
 Windungszahl von geschlossener Kurve $\alpha:[a, b] \to \mathbb{R}^2 \setminus \{0\}$ um den Ursprung $0$ (Def. / Formel, Globale Theorie ebener Kurven)
-$w(\alpha) := \frac{1}{2\pi} \int_{\alpha} \vartheta = \frac{1}{2\pi} \int_{\alpha} \frac{xdy - ydx}{x^2 + y^2} ~~~
+$w(\alpha) := \frac{1}{2\pi} \int_{\alpha} \vartheta = \frac{1}{2\pi} \int_{\alpha} \frac{xdy - ydx}{x^2 + y^2}$ ~~~
+Misst, wie oft $\alpha$ gegen den Uhrzeigersinn um 0 herumläuft.
+$\vartheta = (\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2})$
 
 Windungszahl von $\alpha \to \mathbb{R}^2$ um $p \in \mathbb{R} \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
 $w(\alpha, p)$ := $w(\alpha - p)$ mit $(\alpha, p)(t)$ := $\alpha(t) - p \neq 0$
@@ -253,8 +255,8 @@ Kurve $\alpha: [a, b] \to \mathbb{R}^2$ reguläre geschlossene Kurve. $r(\alpha)
 entspricht Anzahl der Rotationen des Geschwindigkeitsvektors, wenn wir $\alpha$ durchlaufen. Ist \alpha nach Bogenlänge parametrisierte geschlossene Kurve, dann ist $r(\alpha) = \frac{1}{2\pi} \int_{a}^{b} k(s) \; ds$
 
 Einheitskreis (Def., Globale Theorie ebener Kurven)
-$S^1 = \{u \in \mathbb{R}^2 \> | \> |u| = 1\}
-
+$S^1$
+$= \{u \in \mathbb{R}^2 \> | \> |u| = 1\}$
 
 bis 31.10.18
 
