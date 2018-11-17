@@ -43,6 +43,8 @@ Jede Zahl $x \in \mathbb{R}$ kann eindeutig in der Form $x = \pm (b_n 2^n + b_{n
 
 
 
+
+
 1.0 Analysis
 
 1.1 Analysis I
@@ -58,6 +60,9 @@ $e^{i x} = cos(x) + i \, sin(x)$
 $e^{i \pi} = -1$ :) Mathologer: https://www.youtube.com/watch?v=-dhHrg-KbJ0
 
 Analytische Funktion
+
+Charakteristische Funktion $\chi_M$
+
 
 
 
@@ -81,6 +86,12 @@ Mengenalgebra (Def., )
 2.0 Lineare Algebra
 
 2.1 Lineare Algebra I
+
+Regel von Sarrus
+
+Inverse einer 2x2 Matrix $A = \begin{pmatrix}a & b\\c & d\end{pmatrix}$
+$A^{-1}=\dfrac{1}{ad-bc}\begin{pmatrix}d & -b\\-c & a \end{pmatrix}$
+$ad-bc$ ist die Determinante von $A$
 
 
 
@@ -109,6 +120,10 @@ Spezielle Gruppe ??? (Def., )
 SO(n)
 $= {A \in O(n) \> | \> det(A) = 1}$
 
+Invertierbarkeitskriterien
+
+Diagonalisierbarkeitskriterien
+
 
 
 2.3 Einführung in die Algebra
@@ -121,11 +136,12 @@ Transzendente Zahl (Def.)
 
 Kurve (Def., Lokale Kurventheorie)
 Eine glatte Abbildung $(a, b) \to \mathbb{R}^3$
+Intervall, aus dem abgebildet wird, sollte offen sein, da es sonst Probleme mit dem fehlenden Differenzenquotienten in $a$ und $b$ gäbe und damit mit der Glattheit von $\alpha$.
 
 Kurvenlänge $L(\alpha)$ (Formel, Lokale Kurventheorie)
-$\int_{a}^{b} |\alpha'(t)| dt$ 
+$\int_{a}^{b} |\alpha'(t)| dt$ von Kurve $\alpha$
 
-Umparametrisierung $\phi$ (Def., Lokale Kurventheorie)
+Umparametrisierung $\varphi$ (Def., Lokale Kurventheorie)
 Diffeomorphismus $J \to (a, b)$, wobei Kurve von $(a, b) \to \mathbb{R}^3$
 
 Regulär (Def., Lokale Kurventheorie)
@@ -142,13 +158,14 @@ Krümmungsradius (Def., Lokale Kurventheorie)
 $\frac{1}{k(s)}$ von allgemeiner Kurve $\alpha$
 
 Tangentialvektor $t(s)$ von Kurve $\alpha$ (Def., Lokale Kurventheorie)
-$\alpha '(s)$
+$\alpha '(s)$ von Kurve $\alpha$
 
 Normalenvektor $n(s)$ von Kurve $\alpha$ (Def., Lokale Kurventheorie)
-$\frac{\alpha ''(s)}{|\alpha ''(s)|}$
+$\frac{\alpha ''(s)}{|\alpha ''(s)|}$ von Kurve $\alpha$
 
 Binormalenvektor $b(s)$ von Kurve $\alpha$ (Def., Lokale Kurventheorie)
 $t(s) \times n(s)$
+$t$ und $n$ sind normiert.
 
 Frenet-Dreibein (Def., Lokale Kurventheorie)
 $t(s), n(s), b(s)$, pos. orientierte ON-Basis des $\mathbb{R}^3$ an Kurve $\alpha$ in $s$
@@ -175,18 +192,18 @@ Hauptsatz der lokalen Kurventheorie (Satz, Lokale Kurventheorie)
 (a) Zu glatter Funktion $k, \tau:I \to \mathbb{R}$ mit $k(s) > 0 \; \forall s$ existiert eine nach Bogenlänge parametrisierte Kurve $\alpha:I \to \mathbb{R}^3$ mit Krümmung $k(s)$ und Torsion $\tau(s)$ \\ (b) Zwei nach Bogenlänge parametrisierte Kurven $\alpha, \bar{\alpha}:I \to \mathbb{R}^3$ mit derselben Krümmung und Torsion unterscheiden sich nur durch eine orientierungserhaltende euklidische Bewegung, d.h. $\bar{\alpha}(s) = A\alpha(s) + b, b \in \mathbb{R}^3, A \in SO(3)$ \\ "Kurven sind durch ihre Krümmung und Torsion bis auf euklidische Bewegung eindeutig bestimmt."
 
 Glatter Rand eines beschränkten Gebietes $R \subset \mathbb{R}^2$ (Def., Globale Theorie ebener Kurven)
-Rand eines eines beschränkten Gebietes $R \subset \mathbb{R}^2$, der eine disjunkte Vereinigung geschlossener, regulärer Kurven ist.
+Rand eines beschränkten Gebietes $R \subset \mathbb{R}^2$, der eine disjunkte Vereinigung geschlossener, regulärer Kurven ist.
 
 Satz von Fubini (Satz / Formel, Globale Theorie ebener Kurven)
 Für $R = \{(x, y) \in \mathbb{R}^2 \> | \> a \le x \le b, f(x) \le y \le g(x)\}$ mit stetigen Funktionen $f, g: [a, b] \to \mathbb{R}$ gilt $\iint_R F(x, y) dxdx = \int_a^b(\int_{f(x)}^{g(x)} F(x, y) dy) dx$
 
 Kurvenintegral (Def. / Formel, Globale Theorie ebener Kurven)
 $\int_\alpha v$
-$:= \int_a^b \langle v(\alpha(t)), \alpha '(t) \rangle dt$
+$:= \int_a^b \langle v(\alpha(t)), \alpha'(t) \rangle dt$ mit $\alpha: (a, b) \to \mathbb{R}^2$
 
-Rotation eines Vektorfelds (Def. / Formel, Globale Theorie ebener Kurven)
+Rotation eines Vektorfelds $v$ (Def. / Formel, Globale Theorie ebener Kurven)
 $rot \; v(x, y)$
-$:= \frac{\partial}{\partial x}v_1 - \frac{\partial}{\partial y} v_2$
+$:= \frac{\partial}{\partial x}v_2 - \frac{\partial}{\partial y} v_1$ mit $v = \begin{pmatrix} v_1\\v_2 \end{pmatrix}$. \\ Wenn gleich 0, nennt man das Vektorfeld konservativ bzw. wirbelfrei.
 
 Satz von Green (Satz / Formel, Globale Theorie ebener Kurven)
 Sei $R \subset \mathbb{R}^2$ beschränktes Gebiet mit (stückweise) glatter Randkurve $\partial R$, $v$ Vektorfeld auf Umgebung von $R$. Dann gilt: $$\int_{\partial R} v = \iint_R rot \; v(x, y) \, dx \, dy$$
@@ -236,11 +253,11 @@ $w(\alpha) := \frac{1}{2\pi} \int_{\alpha} \vartheta = \frac{1}{2\pi} \int_{\alp
 Misst, wie oft $\alpha$ gegen den Uhrzeigersinn um 0 herumläuft.
 $\vartheta = (\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2})$
 
-Windungszahl von $\alpha \to \mathbb{R}^2$ um $p \in \mathbb{R} \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
-$w(\alpha, p)$ := $w(\alpha - p)$ mit $(\alpha, p)(t)$ := $\alpha(t) - p \neq 0$
+Windungszahl von $\alpha \to \mathbb{R}^2$ um $p \in \mathbb{R}^2 \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
+$w(\alpha, p)$ := $w(\alpha - p)$ mit $(\alpha - p)(t)$ := $\alpha(t) - p \neq 0$
 
-(Weg)Zusammenhangskomponente von $\mathbb{R} \setminus bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
-Eine maximale (weg)zusammenhängende Teilmenge von $\mathbb{R} \setminus bild(\alpha)$
+(Weg)Zusammenhangskomponente von $\mathbb{R} \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
+Eine maximale (weg)zusammenhängende Teilmenge von $\mathbb{R} \setminus Bild(\alpha)$
 Windungszahl aller Punkte einer Zusammenhangskomponente ist konstant
 
 Jordanscher Kurvensatz für glatte Kurven (Satz, Globale Theorie ebener Kurven)
