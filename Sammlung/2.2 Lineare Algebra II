@@ -1,0 +1,31 @@
+Datum der vorläufigen Vervollständigung: Neujahr 2019?
+ETA: Weihnachtsferien 2018/19
+
+2.2 Lineare Algebra II
+
+Skalarprodukt (Def.)
+Eine Abbildung, die bilinear, positiv definit und symmetrisch ist.
+
+Norm
+
+Schwarzsche Ungleichung
+
+Kreuzprodukt / Vektorprodukt (Formel)
+
+Orthogonale Abbildung (Def.)
+
+Selbstadjungierte Abbildung (Def.)
+
+Symmetrische Gruppe (Def.)
+
+Gruppe der orthogonalen Matrizen??? (Def., )
+O(n)
+$= \{A \in Mat(n \times n) \> | \> AA^t = \mathbb{I}\}$
+
+Spezielle Gruppe ??? (Def., )
+SO(n)
+$= {A \in O(n) \> | \> det(A) = 1}$
+
+Invertierbarkeitskriterien
+
+Diagonalisierbarkeitskriterien
