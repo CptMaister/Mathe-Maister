@@ -1,0 +1,37 @@
+Datum der vorläufigen Vervollständigung: Februar 2019
+Eher nur Formelsammlung
+
+4.1 Numerik I (Einführung in die Numerik, bei Daniel Peterseim, WiSe18/19)
+
+Menge der Gleitkommazahlen auf einem Computer (Def., Computerarithmetik)
+$\mathbb{R}(t, s)$
+
+Gleitkommazahl (Def., Computerarithmetik)
+$x = f 2^e = \pm (\sum_{k=0}^{\infty} b_{-k} 2^{-k}) 2^e$ mit Mantisse $f = \pm (b_0 . b_{-1} b_{-2} ... b_{-t+1})_2$ und Exponent $e = \pm(b_{s-1}, b_{s-2}...b_0)_2$
+auch bekannt als Fließkommazahlen
+
+Symmetrisches Runden im Binärsystem (Formel, Computerarithmetik)
+$x^* = rd(x) = chop(x + 2^{-t} 2^e)$
+letzte Stellen von x: ...?0 oder ...?1, durch $+ 2^{-t} 2^e$ dann ...?1 oder ...(?+1)0, durch $chop$ dann ...? oder ...(?+1)
+
+Relative Maschinenungenauigkeit (Def., Computerarithmetik)
+$eps := 2^{-t}$
+bestimmt die Genauigkeit von Gleitkommarechnungen auf dem zugehörigen Rechner.
+
+Bisektionsverfahren (Satz / Formel, Skalare Gleichungen)
+Sei $f:[a, b] \to \mathbb{R}$ stetig und $f(a)f(b) < 0$. Die Folge $(x_n)_{n \in \mathbb{N}}$, deren Glieder durch $x_n = frac{1}{2}(a_n + b_n)$ mit $a_{n+1} = a_n, b_{n+1} = x_n, falls f(a)f(x_n) \le 0$ und $a_{n+1} = x_n, b_{n+1} = b_n, sonst$ gegeben sind, erfüllt: $$\lim\limits_{n \to \infty} x_n = \bar{x}, f(\bar{x}) = 0$$ $$|x_n -\bar{x}| \le \frac{1}{2}(b_n - a_n) = \frac{1}{2^{n+1}}(b_0 - a_0)$$ Jedes Intervall $[a_n, b_n]$ enthält die Nullstelle $\bar{x}$.
+
+Newton-Verfahren (Formel, Skalare Gleichungen)
+$x_{n+1} = x_n - \frac{f(x_n}{f'(x_n)}$
+
+Modifiziertes Newton-Verfahren (Formel, Skalare Gleichungen)
+$x_{n+1} = x_n - \frac{F(x_n}{F'(x_n)}$ mit $F(x) = \frac{f(x)}{f'(x)}$
+
+Banachscher Fixpunktsatz (Def., Skalare Gleichungen)
+$\phi:[a, b] \to \mathbb{R}$ sei Selbstabbildung auf abgeschlossenem Intervall $[a, b]$, Lipschitz-stetig auf $[a, b]$ mit fester Lipschitz-Konstante $L < 1$, also $\forall x, y \in [a, b]\!: |\phi(x) - \phi(y)| \le L|x - y|$. Dann besitzt $\phi$ genau einen Fixpunkt $\bar{x}$ in $[a, b]$. $\forall x_0 \in [a, b]$ strebt die durch $x_{n+1} = \phi(x), n \in \mathbb{N}$ definierte Folge gegen $\bar{x}$. Es gelten die a posteriori und die a priori Abschätzung $$|x_n - \bar{x}| \le \frac{L}{1-L} |x_n - x_{n-1}|$$ $$|x_n - \bar{x}| \le \frac{L^n}{1-L} |x_1 - x_0|$$
+
+Sekantenverfahren / Regula falsi (Formel, Skalare Gleichungen)
+$x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} f(x_n), n > 1$
+ein lustiger Satz (2.18) hat noch viele Infos zu Konvergenzbedingungen
+
+bis 30.10.18
