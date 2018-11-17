@@ -1,0 +1,149 @@
+Datum der vorläufigen Vervollständigung: Februar 2019
+
+3.1 Geometrie I (Einführung in die Geometrie, bei Kai Cieliebak, WiSe18/19)
+
+Kurve (Def., Lokale Kurventheorie)
+Eine glatte Abbildung $(a, b) \to \mathbb{R}^3$
+Intervall, aus dem abgebildet wird, sollte offen sein, da es sonst Probleme mit dem fehlenden Differenzenquotienten in $a$ und $b$ gäbe und damit mit der Glattheit von $\alpha$.
+
+Kurvenlänge $L(\alpha)$ (Formel, Lokale Kurventheorie)
+$\int_{a}^{b} |\alpha'(t)| dt$ von Kurve $\alpha$
+
+Umparametrisierung $\varphi$ (Def., Lokale Kurventheorie)
+Diffeomorphismus $J \to (a, b)$, wobei Kurve von $(a, b) \to \mathbb{R}^3$
+
+Regulär (Def., Lokale Kurventheorie)
+Kurve $\alpha:I \to \mathbb{R}^3$ mit Ableitung $\neq 0$ für alle $t \in I$
+
+Nach Bogenlänge parametrisiert (Def., Lokale Kurventheorie)
+Kurve $\alpha$ mit $|\alpha '(s)| = 1 \; \forall s \in I$
+
+Krümmung $k(s)$ (Formel, Lokale Kurventheorie)
+$|\alpha ''(s)|$, mit $\alpha$ parametrisiert nach Bogenlänge
+$= \theta'(s)$ für Ebene Kurven, wenn $\theta(s)$ def. als Winkel zwischen $t(s)$ und der x-Achse.
+
+Krümmungsradius (Def., Lokale Kurventheorie)
+$\frac{1}{k(s)}$ von allgemeiner Kurve $\alpha$
+
+Tangentialvektor $t(s)$ von Kurve $\alpha$ (Def., Lokale Kurventheorie)
+$\alpha '(s)$ von Kurve $\alpha$
+
+Normalenvektor $n(s)$ von Kurve $\alpha$ (Def., Lokale Kurventheorie)
+$\frac{\alpha ''(s)}{|\alpha ''(s)|}$ von Kurve $\alpha$
+
+Binormalenvektor $b(s)$ von Kurve $\alpha$ (Def., Lokale Kurventheorie)
+$t(s) \times n(s)$
+$t$ und $n$ sind normiert.
+
+Frenet-Dreibein (Def., Lokale Kurventheorie)
+$t(s), n(s), b(s)$, pos. orientierte ON-Basis des $\mathbb{R}^3$ an Kurve $\alpha$ in $s$
+
+Schmiegeebene (Def., Lokale Kurventheorie)
+t-n-Ebene
+
+Normalenebene (Def., Lokale Kurventheorie)
+n-b-Ebene
+
+Torsion $|\tau(s)|$ (Formel, Lokale Kurventheorie)
+$|b'(s)|$
+Geschwindigkeit, mit der sich die Schmiegeebene der Kurve $\alpha$ dreht
+
+Frenet-Formeln (Formel, Lokale Kurventheorie)
+$t'(s) = k(s) n(s)$ \\ $n'(s) = -k(s) t(s) -\tau (s) b(s)$ \\ $b'(s) = \tau (s) n(s)$
+Manchmal $-\tau$ statt $\tau$ je nach Literatur und Interpretation von $\tau$
+
+Euklidische Bewegung (Def., Lokale Kurventheorie)
+Eine abstandserhaltende Abbildung $\mathbb{R}^3 \to \mathbb{R}^3$
+d.h. $|M(p) - M(q)| = |p - q| \; \forall p,q \in \mathbb{R}^3$
+
+Hauptsatz der lokalen Kurventheorie (Satz, Lokale Kurventheorie)
+(a) Zu glatter Funktion $k, \tau:I \to \mathbb{R}$ mit $k(s) > 0 \; \forall s$ existiert eine nach Bogenlänge parametrisierte Kurve $\alpha:I \to \mathbb{R}^3$ mit Krümmung $k(s)$ und Torsion $\tau(s)$ \\ (b) Zwei nach Bogenlänge parametrisierte Kurven $\alpha, \bar{\alpha}:I \to \mathbb{R}^3$ mit derselben Krümmung und Torsion unterscheiden sich nur durch eine orientierungserhaltende euklidische Bewegung, d.h. $\bar{\alpha}(s) = A\alpha(s) + b, b \in \mathbb{R}^3, A \in SO(3)$ \\ "Kurven sind durch ihre Krümmung und Torsion bis auf euklidische Bewegung eindeutig bestimmt."
+
+Glatter Rand eines beschränkten Gebietes $R \subset \mathbb{R}^2$ (Def., Globale Theorie ebener Kurven)
+Rand eines beschränkten Gebietes $R \subset \mathbb{R}^2$, der eine disjunkte Vereinigung geschlossener, regulärer Kurven ist.
+
+Satz von Fubini (Satz / Formel, Globale Theorie ebener Kurven)
+Für $R = \{(x, y) \in \mathbb{R}^2 \> | \> a \le x \le b, f(x) \le y \le g(x)\}$ mit stetigen Funktionen $f, g: [a, b] \to \mathbb{R}$ gilt $\iint_R F(x, y) dxdx = \int_a^b(\int_{f(x)}^{g(x)} F(x, y) dy) dx$
+
+Kurvenintegral (Def. / Formel, Globale Theorie ebener Kurven)
+$\int_\alpha v$
+$:= \int_a^b \langle v(\alpha(t)), \alpha'(t) \rangle dt$ mit $\alpha: (a, b) \to \mathbb{R}^2$
+
+Rotation eines Vektorfelds $v$ (Def. / Formel, Globale Theorie ebener Kurven)
+$rot \; v(x, y)$
+$:= \frac{\partial}{\partial x}v_2 - \frac{\partial}{\partial y} v_1$ mit $v = \begin{pmatrix} v_1\\v_2 \end{pmatrix}$. \\ Wenn gleich 0, nennt man das Vektorfeld konservativ bzw. wirbelfrei.
+
+Satz von Green (Satz / Formel, Globale Theorie ebener Kurven)
+Sei $R \subset \mathbb{R}^2$ beschränktes Gebiet mit (stückweise) glatter Randkurve $\partial R$, $v$ Vektorfeld auf Umgebung von $R$. Dann gilt: $$\int_{\partial R} v = \iint_R rot \; v(x, y) \, dx \, dy$$
+
+Kritischer Punkt von $f$ (Def., Globale Theorie ebener Kurven)
+$x \in \mathbb{R}$, wenn $f'(x) = 0$, $f:\mathbb{R} \to \mathbb{R}$ glatte Funktion.
+
+Kritischer Wert von $f$ (Def., Globale Theorie ebener Kurven)
+$y \in \mathbb{R}$, wenn $\exists$kritischer Punkt $x$ mit $f(x) = y$
+
+Satz von Sard (Satz., Globale Theorie ebener Kurven)
+Sei $U \in \mathbb{R}$ offen, $f:U \to \mathbb{R}$ glatt. Dann hat die Menge der kritischen Werte von $f$ Maß Null.
+
+Maß Null (Def., Globale Theorie ebener Kurven)
+Wenn es, für eine Menge $M \subset \mathbb{R}$, $\forall \varepsilon > 0$ abzählbar viele abgeschlossene Intervalle $[a_i, b_i],$ $i \in \mathbb{N}$ gibt mit $M \subseteq \bigcup_{i = 1}^{\infty} [a_i, b_i],$, $i\in \mathbb{N}$ und $\sum_{i=1}^{\infty} |b_i - a_i| < \epsilon$
+$\mathbb{Q} \subset \mathbb{R}$ hat Maß Null, aber $(a, b)$ nicht.
+
+Geschlossene Kurve in der Ebene (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha:[a, b] \to \mathbb{R}^2$ mit $\alpha(a) = \alpha(b)$, $\alpha'(a) = \alpha'(b)$, $\alpha''(a) = \alpha''(b)$, ...
+
+Homotopie zwischen geschlossenen Kurven (Def., Globale Theorie ebener Kurven)
+Glatte Abbildung $H:[0, 1] \times [a, b] \to \mathbb{R}^2$ mit $H(0, t) = \alpha_0(t)$, $H(1, t) = \alpha_1(t)$, wobei $t \mapsto H(s, t)$ geschlossene Kurve ist $\forall s \in [0, 1]$ und $\alpha_0, \alpha_1:[a, b] \to \mathbb{R}^2$ geschlossene Kurven.
+
+Homotopieinvarianz von Kurvenintegralen (Satz, Globale Theorie ebener Kurven)
+$\alpha_0, \alpha_1:[a, b] \to U$ homotope geschlossene Kurven, $U \subset \mathbb{R}^2$ offen, $v$ Vektorfeld auf $U$ mit $rot \; v = 0$, dann $\int_{\alpha_0} v = \int_{\alpha_1} v$
+Interpretation für Physiker: egal, welcher Weg, die Arbeit bleibt gleich.
+
+Wegzusammenhängend (Def., Globale Theorie ebener Kurven)
+$U \in \mathbb{R}^2$ offen, falls je zwei Punkte $p, q \in U$ durch eine glatte Kurve in $U$ verbunden werden können.
+
+Einfach zusammenhängend (Def., Globale Theorie ebener Kurven)
+$U \in \mathbb{R}^2$ offen, wegzusammenhängend und jede geschlossene Kurve in $U$ homotop zu einer konstanten Kurve.
+
+Konstante Kurve (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha:[a, b] \to \mathbb{R}^n$ mit $\alpha(t) = p \> \forall t$
+
+$U \subset \mathbb{R}^2$ Sternförmig bzgl $p \in U$ (Def., Globale Theorie ebener Kurven) ~~~
+Sei $p \in U$, $\forall q \in U \subset \mathbb{R}^2$ liegt die Strecke von $p$ nach $q$ ganz in $U$
+Ist $U$ sternförmig bzgl einem enthaltenen Punkt, so ist $U$ auch einfach zusammenhängend.
+
+Vektorfeld $\vartheta$ mit $rot \; \vartheta = 0$ (Hilfsdef. / Formel, Globale Theorie ebener Kurven) ~~~
+$\vartheta(x, y) := (\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2})$
+$rot \; \vartheta = \partial x (\frac{x}{x^2 + y^2}) - \partial y (\frac{-y}{x^2 + y^2}) = 0$
+
+Windungszahl von geschlossener Kurve $\alpha:[a, b] \to \mathbb{R}^2 \setminus \{0\}$ um den Ursprung $0$ (Def. / Formel, Globale Theorie ebener Kurven)
+$w(\alpha) := \frac{1}{2\pi} \int_{\alpha} \vartheta = \frac{1}{2\pi} \int_{\alpha} \frac{xdy - ydx}{x^2 + y^2}$ ~~~
+Misst, wie oft $\alpha$ gegen den Uhrzeigersinn um 0 herumläuft.
+$\vartheta = (\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2})$
+
+Windungszahl von $\alpha \to \mathbb{R}^2$ um $p \in \mathbb{R}^2 \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
+$w(\alpha, p)$ := $w(\alpha - p)$ mit $(\alpha - p)(t)$ := $\alpha(t) - p \neq 0$
+
+(Weg)Zusammenhangskomponente von $\mathbb{R} \setminus Bild(\alpha)$ (Def., Globale Theorie ebener Kurven)
+Eine maximale (weg)zusammenhängende Teilmenge von $\mathbb{R} \setminus Bild(\alpha)$
+Windungszahl aller Punkte einer Zusammenhangskomponente ist konstant
+
+Jordanscher Kurvensatz für glatte Kurven (Satz, Globale Theorie ebener Kurven)
+$\alpha: [a, b] \to \mathbb{R}^2$ einfach geschlossene reguläre glatte Kurve. Dann hat $\mathbb{R}^2 \setminus Bild(\alpha)$ genau zwei Zusammenhangskomponenten: $U_0$: unbeschränkt, $w(\alpha, U_0) = 0$ und $U_1$: beschränkt, $w(\alpha, U_1) = \pm 1$
+
+einfache Kurve (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha: [a, b] \to \mathbb{R}^2$, $\alpha(s) = \alpha(t), s < t \Rightarrow s = a, t = b$
+also keine Kreuzungen
+
+Rotationszahl einer Kurve $\alpha$ (Def., Globale Theorie ebener Kurven)
+Kurve $\alpha: [a, b] \to \mathbb{R}^2$ reguläre geschlossene Kurve. $r(\alpha) := w(\alpha') \in \mathbb{Z}$
+entspricht Anzahl der Rotationen des Geschwindigkeitsvektors, wenn wir $\alpha$ durchlaufen. Ist \alpha nach Bogenlänge parametrisierte geschlossene Kurve, dann ist $r(\alpha) = \frac{1}{2\pi} \int_{a}^{b} k(s) \; ds$
+
+Einheitskreis (Def., Globale Theorie ebener Kurven)
+$S^1$
+$= \{u \in \mathbb{R}^2 \> | \> |u| = 1\}$
+
+bis 31.10.18
+
+
+(, Globale Theorie ebener Kurven)
