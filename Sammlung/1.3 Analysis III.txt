@@ -1,8 +1,64 @@
 Datum der vorläufigen Vervollständigung: Februar 2019
 ETA: gegen Dezember 2018
 
+Name
+Beschreibung
+F: Formel
+I: Interpretation
+T: Trivia
+FF: FunFacts
+Bsp: Beispiele
+L: Lesehinweis
+V: Verwendete Def. etc
+
 1.3 Analysis III
 
-Mengenring (Def., )
+Symmetrische Differenz (Def., Mengenalgebren)
+$A \; \triangle \; B$
+F: $:= (A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)
+I: Exklusives Oder / XOR bzw. alles, was entweder in A oder in B ist.
 
-Mengenalgebra (Def., )
+Mengenalgebra (Def., Mengenalgebren)
+Menge $\mathfrak{A} \subset P(\Omega)$ mit \\1.) $\emptyset \in \mathfrak{A}$ \\2.) A \in \mathfrak{A} \Rightarrow A^c \in \mathfrak{A}$ \\3.) $A, B \in \mathfrak{A} \RightArrow A \cup B \in \mathfrak{A}$
+T: Kurz auch einfach "Algebra" genannt.
+FF: $A, B \in \mathfrak{A} \Rightarrow A \cap B = (A^c \cup B^c)^c \in \mathfrak{A}$ \\$\Omega = \emptyset^c \in \mathfrak{A}$
+
+Mengenring (Def., Mengenalgebra)
+Menge $\mathfrak{A} \subset P(\Omega)$ mit \\1.) $\emptyset \in \mathfrak{A}$ \\2.) A, B \in \mathfrak{A} \Rightarrow A \setminus B \in \mathfrak{A}$ \\3.) $A, B \in \mathfrak{A} \RightArrow A \cup B \in \mathfrak{A}$
+T: Kurz auch einfach "Ring" genannt.
+FF: $A, B \in \mathfrak{A} \Rightarrow A \cap B = A \setminus (A \setminus B) \in \mathfrak{A}$ \\$\Omega \in \mathfrak{A} \Rightarrow \mathfrak{A}$ ist Algebra.
+Bsp: $\{\emptyset, \Omega\}$ triviale "kleinste" Algebra, $P(\Omega)$ "größte" Algebra
+
+Endliche Intervallsumme (Def., Mengenalgebren)
+$\mathfrak{Q}(\mathbb{R})$
+F: $:= \{\bigcup \limits_{i=1}^{m} [a_i, b_i) \> | \> m \in \mathbb{N}_0, a, b \in \mathbb{R}^m, a_i < b_i \; \forall i\}$
+FF: $\mathfrak{Q}(\mathbb{R})$ ist ein Ring, aber keine Algebra.
+
+Ringprodukt (Def., Mengenalgebren)
+$\mathfrak{A} \boxtimes \mathfrak{B}$, mit $\mathfrak{A} \subset P(\Omega_1), \mathfrak{B} \subset P(\Omega_2)$ Ringe, $\Omega_i$ Mengen.
+F: $:= \{\bigcup \limits_{i=1}^{m} A_i \times B_i \> | \> m \in \mathbb{N}, \forall i : A_i \in \mathfrak{A}, B_i \in \mathfrak{B}\}$
+
+Quadermenge in $R^n$ (Def., Mengenalgebren)
+$Q(a, b)$
+F: $:= \{\overset{n}{\underset{i=1}{\mathrm{X}}} [a_i, b_i) \> | \> a, b \in \mathbb{R}^n, a_i < b_i, \emptyset sonst\}$
+I: Menge aller n-dimensionaler halboffener Quader.
+FF: Es gilt: $Q(a, b) = [a_1, b_1) \times Q(\tilde{a}, \tilde{b})$ mit $\tilde{a} = (a_2, ..., a_n), \tilde{b} = (b_2, ..., b_n)$
+
+Quadersummen in $R^n$
+$\mathfrak{Q}(\mathbb{R}^n)$
+F: $:= \{\bigcup \limits_{i=1}^{m} Q(a^{(i)}, b^{(i)}) \> | \> m \in \mathbb{N}, a^{(i)}, b^{(i)} \in \mathbb{R}^n \; \forall i\}$
+I: Endliche Vereinigung n-dimensionaler halboffener Quader.
+L: Die $^{(i)}s$ sind hier als Index zu verstehen. Nicht runtergesetzt, da sonst verwechselbar mit der i-ten Komponente von $a$ oder $b$.
+V: Quadermenge $Q(a, b)$
+
+(Def., Mengenalgebren)
+
+
+(Def., Mengenalgebren)
+
+
+(Def., Mengenalgebren)
+
+
+(Def., Mengenalgebren)
+

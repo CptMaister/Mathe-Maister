@@ -1,6 +1,20 @@
 Datum der vorläufigen Vervollständigung: Februar 2019
 ETA: gegen Dezember 2018
 
+Name
+Beschreibung
+F: Formel
+I: Interpretation
+T: Trivia
+FF: FunFacts
+Bsp: Beispiele
+
+
+
 2.1 Lineare Algebra I
+
+
+
+
 
 Regel von Sarrus
