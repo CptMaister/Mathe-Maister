@@ -8,48 +8,100 @@ I: Interpretation
 T: Trivia
 FF: FunFacts
 Bsp: Beispiele
-L: Lesehinweis
+Les: Lesehinweis
 V: Verwendete Def. etc
+Lit: Nummer aus der verwendeten Literatur
+
+Literatur: Forster Analysis 3 (Auflage? ("nicht die alten blauen Auflagen"))
 
 1.3 Analysis III
+
+Potenzmenge (Def., Megenalgebren)
+$P(\Omega)$
+F: $:= \{M \> | \> M \subset \Omega\}
+Lit: 1.1
 
 Symmetrische Differenz (Def., Mengenalgebren)
 $A \; \triangle \; B$
 F: $:= (A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)
 I: Exklusives Oder / XOR bzw. alles, was entweder in A oder in B ist.
+Lit: 1.1
 
 Mengenalgebra (Def., Mengenalgebren)
-Menge $\mathfrak{A} \subset P(\Omega)$ mit \\1.) $\emptyset \in \mathfrak{A}$ \\2.) A \in \mathfrak{A} \Rightarrow A^c \in \mathfrak{A}$ \\3.) $A, B \in \mathfrak{A} \RightArrow A \cup B \in \mathfrak{A}$
+Menge $\mathfrak{A} \subset P(\Omega)$ mit \\i) $\emptyset \in \mathfrak{A}$ \\ii) A \in \mathfrak{A} \Rightarrow A^c \in \mathfrak{A}$ \\iii) $A, B \in \mathfrak{A} \RightArrow A \cup B \in \mathfrak{A}$
 T: Kurz auch einfach "Algebra" genannt.
 FF: $A, B \in \mathfrak{A} \Rightarrow A \cap B = (A^c \cup B^c)^c \in \mathfrak{A}$ \\$\Omega = \emptyset^c \in \mathfrak{A}$
+Lit: 1.2
 
 Mengenring (Def., Mengenalgebra)
-Menge $\mathfrak{A} \subset P(\Omega)$ mit \\1.) $\emptyset \in \mathfrak{A}$ \\2.) A, B \in \mathfrak{A} \Rightarrow A \setminus B \in \mathfrak{A}$ \\3.) $A, B \in \mathfrak{A} \RightArrow A \cup B \in \mathfrak{A}$
+Menge $\mathfrak{A} \subset P(\Omega)$ mit \\i) $\emptyset \in \mathfrak{A}$ \\ii) A, B \in \mathfrak{A} \Rightarrow A \setminus B \in \mathfrak{A}$ \\iii) $A, B \in \mathfrak{A} \RightArrow A \cup B \in \mathfrak{A}$
 T: Kurz auch einfach "Ring" genannt.
 FF: $A, B \in \mathfrak{A} \Rightarrow A \cap B = A \setminus (A \setminus B) \in \mathfrak{A}$ \\$\Omega \in \mathfrak{A} \Rightarrow \mathfrak{A}$ ist Algebra.
 Bsp: $\{\emptyset, \Omega\}$ triviale "kleinste" Algebra, $P(\Omega)$ "größte" Algebra
+Lit: 1.2
 
 Endliche Intervallsumme (Def., Mengenalgebren)
 $\mathfrak{Q}(\mathbb{R})$
 F: $:= \{\bigcup \limits_{i=1}^{m} [a_i, b_i) \> | \> m \in \mathbb{N}_0, a, b \in \mathbb{R}^m, a_i < b_i \; \forall i\}$
 FF: $\mathfrak{Q}(\mathbb{R})$ ist ein Ring, aber keine Algebra.
+Lit: 1.3
 
 Ringprodukt (Def., Mengenalgebren)
 $\mathfrak{A} \boxtimes \mathfrak{B}$, mit $\mathfrak{A} \subset P(\Omega_1), \mathfrak{B} \subset P(\Omega_2)$ Ringe, $\Omega_i$ Mengen.
 F: $:= \{\bigcup \limits_{i=1}^{m} A_i \times B_i \> | \> m \in \mathbb{N}, \forall i : A_i \in \mathfrak{A}, B_i \in \mathfrak{B}\}$
+Lit: 1.4
 
 Quadermenge in $R^n$ (Def., Mengenalgebren)
 $Q(a, b)$
 F: $:= \{\overset{n}{\underset{i=1}{\mathrm{X}}} [a_i, b_i) \> | \> a, b \in \mathbb{R}^n, a_i < b_i, \emptyset sonst\}$
 I: Menge aller n-dimensionaler halboffener Quader.
 FF: Es gilt: $Q(a, b) = [a_1, b_1) \times Q(\tilde{a}, \tilde{b})$ mit $\tilde{a} = (a_2, ..., a_n), \tilde{b} = (b_2, ..., b_n)$
+Lit: 1.5
 
-Quadersummen in $R^n$
+Quadersummen in $\mathbb{R}^n$ (Def., Mengenalgebren)
 $\mathfrak{Q}(\mathbb{R}^n)$
 F: $:= \{\bigcup \limits_{i=1}^{m} Q(a^{(i)}, b^{(i)}) \> | \> m \in \mathbb{N}, a^{(i)}, b^{(i)} \in \mathbb{R}^n \; \forall i\}$
+FF: $\mathfrak{Q}(\mathbb{R})$ ist keine $\sigma$-Algebra, nichtmal Algebra, nur Ring, da $\bigcup \limits_{i=1}^{\infty} [i, i+1) \notin \mathfrak{Q}(\mathbb{R})$ und $\mathbb{R} \notin \mathfrak{Q}$
 I: Endliche Vereinigung n-dimensionaler halboffener Quader.
 L: Die $^{(i)}s$ sind hier als Index zu verstehen. Nicht runtergesetzt, da sonst verwechselbar mit der i-ten Komponente von $a$ oder $b$.
 V: Quadermenge $Q(a, b)$
+Lit: 1.5
+
+$\sigma$-Algebra (Def., Mengenalgebren)
+Menge $\mathfrak{A} \subset P(\Omega)$ mit: \\i) $\emptyset \in \mathfrak{A}$ \\ii) $A \in \mathfrak{A} \Rightarrow A^c \in \mathfrak{A}$ \\iii) $A_k \in \mathfrak{A} \Rightarrow \bigcup \limits_{k=1}^{\infty} A_k \in \mathfrak{A}, \> k \in \mathbb{N}$
+Bsp: Triviale Beispiele: $\{\emptyset, \mathbb{R}\}$, $P(\Omega)$
+Lit: 1.6
+
+Spur von $\sigma$-Algebra $\mathfrak{A}$ auf $\Omega$ (Def., Mengenalgebren)
+$\mathfrak{A} \cap \Omega_1$ \\mit $\mathfrak{A} \subset P(\Omega)$ $\sigma$-Algebra, $\Omega_1 \subset \Omega$
+F: $:= \{A \cap \Omega_1 \> | \> A \in \mathfrak{A}\}
+FF: $\mathfrak{A} \cap \Omega_1$ ist eine $\sigma$-Algebra in $P(\Omega)$
+Lit: 1.7
+
+von $M \subset P(\Omega)$ erzeugte $\sigma$-Algebra (Def., Mengenalgebren)
+$\sigma (M)$
+F: $:= \bigcap \limits_{\begin{subarray}{l} \mathfrak{A} \, \sigma \text{-Alg} \\ \text{mit } M \in \mathfrak{A} \end{subarray}}$
+FF: Kleinste $\sigma$-Algebra, die $M \subset P(\Omega)$ enthält \\Der Schnitt von $\sigma$-Algebren ist wieder eine $\sigma$-Algebra
+Lit: 1.8
+
+Borel-$\sigma$-Algebra $\mathfrak{B}(\Omega)$ (Def., Mengenalgebren)
+$\sigma (T)$ \\$(\Omega, T)$ topologischer Raum, mit strukturtragender Menge $\Omega$ und offenen Mengen $T$
+FF: $$\mathfrak{B}(\mathbb{R^n) = \sigma (\mathfrak{Q}(\mathbb{R}^n)) = \sigma (\mathfrak{Q}^{(n)}_{\text{rat}})$
+Lit: 1.9
+
+Quadersummen in $\mathbb{Q}^n$ (Def., Mengenalgebren)
+$\mathfrak{Q}^{(n)}_{\text{rat}}$
+F: $:= \{\bigcup \limits_{i=1}^{m} Q(a^{(i)}, b^{(i)}) \> | \> m \in \mathbb{N}, \; a^{(i)}, \; b^{(i)} \in \mathbb{Q}^n \; \forall i\}$
+FF: jede offene Menge T im $\mathbb{R}^n$ ist disjunkte Vereinigung von Quadern mit rationalen Endpunkten, also $T \subset \sigma(\mathfrak{Q}^{(n)}_{\text{rat}})$, also $\exists Q_k \in \mathfrak{Q}^{(n)}_{\text{rat}} disjunkt mit $T$ = \bigcup \limits_{k=1}^{\infty} Q_k$
+T: $=\mathfrak{Q}(\mathbb{Q}^n)$
+Lit: 1.10, 1.11
+
+$\sigma$-Algebra-Produkt (Def., Mengenalgebren)
+$\mathfrak{A} \otimes \mathfrak{B}$
+F: $:= \sigma(\mathfrak{A} \boxtimes \mathfrak{B})$
+
+monotone Limiten (Def., Mengenalgebren) ~~~~~ $k \to \infty$
+$X_k \nearrow X$
 
 (Def., Mengenalgebren)
 
@@ -62,3 +114,5 @@ V: Quadermenge $Q(a, b)$
 
 (Def., Mengenalgebren)
 
+
+(Def., Mengenalgebren)

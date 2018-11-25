@@ -10,11 +10,108 @@ FF: FunFacts
 Bsp: Beispiele
 
 
+Regel von Sarrus
+
 
 2.1 Lineare Algebra I
 
 
+Mengenprodukt
+$M^n = \underbrace{ M \times ... \times M }_{n-mal}= \{(m_1, ... , m_n)|m_i \in M_i\}$
+Bsp.: $\mathbb{R}_2$ heißt euklidische Ebene
 
+Gerade in $\mathbb{R}^2$
+$A \subset \mathbb{R}^2 \Leftrightarrow A = \{(x,y) \in \mathbb{R} | xa + yb = c ,\> a,b,c \in \mathbb{R}\}$
 
+Gerade in $\mathbb{R}^n$
+$g \subset \mathbb{R}^n \Leftrightarrow \exists u, v \in \mathbb{R}^n, v\neq 0: g = u + \mathbb{R}v$
+FF: Ebene analog
 
-Regel von Sarrus
+Ebene in $\mathbb{R}^3$
+$E \subset \mathbb{R}^3 Ebene \Leftrightarrow E = \{(x,y,z) \in \mathbb{R}^3 | xa_1 + ya_2 + za_3 =d \>,d \in \mathbb{R}^3, a_i \in \mathbb{R} \> \forall i \in \{1,2,3\}\}$
+
+Dimension von Vektorraum A
+$dim(A)$ 
+Bsp.: $dim(\mathbb{R}^n) = n$
+
+Hyperebene in $\mathbb{R}^n§
+$H \subset \mathbb{R}^n \;in \;\mathbb{R}^n\; ist \;H = \{(x_1, ... ,x_n) \in \mathbb{R}^n | a_1x_1 + ... + a_nx_n = b \>,b\in \mathbb{R}^n, a_1,...,a_n,  \in \mathbb{R}, (a_1,...,a_n) \neq 0\}$
+
+Abbildung
+$f: X\to Y \:, x\mapsto f(x) \:, \forall x \in X \: \exists! y \in Y: \: f(x) = y$
+
+Graph von f 
+$\{(x,f(x)) | x \in X\} \subset X \times Y$
+
+Menge der Abbildungen von X nach Y
+$Abb(X,Y)$
+
+Identität
+$id_x:X \to X,x \mapsto x$
+
+Komposition 
+$g \circ f: x \mapsto g(f(x)), \: f \circ g: X \xrightarrow{f} Y \xrightarrow{g} Z, \: x \mapsto f(x) \mapsto g(f(x))$
+FF: Komposition von Abbildungen ist assoziativ. 
+
+Injektivität
+$\forall x_1, x_2 \in X: f(x_1) = f(x_2) \Rightarrow x_1 = x_2$
+
+Surjektivität
+$\forall y \in Y \: \exists x \in X: f(x) = y$
+
+Bijektivität
+Abbildung ist injektiv und surjektiv.
+
+Bild von A unter f
+$f(A) = \{y \in Y | \exists x \in A: f(x) = y \}$
+
+Urbild 
+$f^{-1} (B) = \{x \in X | f(x) \in B \}$
+FF: Urbild bildet nicht Elemente auf etwas ab, sondern Mengen auf Mengen. 
+
+Umkehrabbildung
+$f:X \to Y \: bijektiv, \: dann \: f^{-1}:Y \to X, \: y \mapsto x \: mit \: f(x) = y$
+
+Ordnungsrelation
+Eine Relation, die reflexiv, antisymmetrisch und transitiv ist. 
+
+Äquivalenzrealtion
+Eine Relation, die reflexiv, symmetrisch und transitiv ist. 
+
+Reflexivität
+$\forall x \in X: x \sim x$
+
+Transitivität
+$\forall x,y,z \in X: x \sim y \land y \sim z \Rightarrow x \sim y$
+
+Symmetrie
+$\forall x,y \in X: x \sim y \Leftrightarrow y \sim x$
+
+Antisymmetrie
+$\forall x,y \in X: x \sim y \land y \sim x \Rightarrow x = y$
+
+von x erzeugte Äquivalenzklasse 
+$[x]$
+F: $:= \{y \in M | y \sim x \} \: , x \in M$
+FF: disjunkt oder gleich zu anderen Äquivalenzklassen
+
+Verknüpfung auf M
+M nichtleer, $Abb.\ast : M \times M \to M , \: (a,b) \mapsto a \ast b$
+
+neutrales Element
+$ e \in M$ mit $\forall a \in M: e \ast a = a = a \ast e$
+Bsp.: 0 bei Addition, 1 bei Multiplikation, id bei Abbildung 
+
+Inverse Elemente
+$\forall a \in M \: \exists b \in M: b \ast a = e = b \ast a$ 
+
+Abgeschlossenheit
+$\forall a,b \in (M, \ast ): a \ast b \in M$
+
+Monoid
+Ist eine nichtleere Menge M mit einer assoziativen Verknüpfung $\ast$ und neutralem Element e. 
+
+Gruppe
+nichtleere Menge M mit Verknüpfung $\ast$ und Eigenschaften \\ i) Abgeschlossenheit \\ ii) Assoziativität \\ iii) Neutrales Element \\ iv) Inverse Elemente für alle Elemente aus M
+FF: Ist Monoid in dem jedes Element invertierbar ist. 
+Bsp.: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x) \: mit \: \gamma (X) = \{f \in Abb(X,X) | f \: bijektiv\} \: keine \: Gruppe \: ist \:( \mathbb{N}, + , 0), \: da \: keine \: Inversen \: vorhanden$
