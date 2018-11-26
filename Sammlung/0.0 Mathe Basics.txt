@@ -14,6 +14,9 @@ $a(b + c) = ab + ac$
 Binärdarstellung
 Jede Zahl $x \in \mathbb{R}$ kann eindeutig in der Form $x = \pm (b_n 2^n + b_{n-1} 2^{n-1} + ... + b_0 2^0 + b_{-1} 2^{-1} + ... )$ geschrieben werden, wobei $n \in \mathbb{N}$ und Binärkoeffizienten $b_i \in \{0, 1\} \> \forall i \in \{n, n\!-\!1, ...\}$
 
+Dreiecksungleichung
+$|a + b| \le |a| + |b|$
+
 Potenzmenge der Menge M
 P(M)
 $:= \{N \> | \> N \in M\}$
