@@ -143,7 +143,40 @@ Einheitskreis (Def., Globale Theorie ebener Kurven)
 $S^1$
 $= \{u \in \mathbb{R}^2 \> | \> |u| = 1\}$
 
-bis 31.10.18
+
+--------- bis 31.10.18 ---------------
+
+
+reguläre Homotopie zwischen regulären geschlossenen Kurven (Def., Globale Theorie ebener Kurven)
+glatte Abbildung $H: [0, 1] \times [a, b] \to \mathbb{R}^2$ mit $H(0, t) = \alpha_0(t)$, $H(1, t) = \alpha_1(t)$, $t \mapsto H(s, t)$ ist eine reguläre geschlossene Kurve $\forall s \in [0, 1]$
+FF: sind zwei reguläre geschlossene Kurven $\alpha_0, \alpha_1: [a, b] \to \mathbb{R}^2$ gilt: $\alpha_0, \alpha_1$ regulär homotop $\Leftrightarrow r(\alpha_0) = r(\alpha_1)$ (Rückrichtung durch Satz von Whitney-Graustein) \\Dadurch lässt sich der 1-dimensionale Sphäre in $\mathbb{R}^2$ nicht von Innen nach Außen kehren. Aber die 2-dimensionale Sphäre in $\mathbb{R}^3$ lässt sich von Innen nach Außen kehren!
+V: $r(\alpha)$ ist die Rotationszahl von $\alpha$
+
+Index von Vektorfeld $v$ auf über Kurve $\alpha$ (Def., Globale Theorie ebener Kurven)
+$ind(v, \alpha)$
+F: $:= w(v \circ \alpha)$, $v \circ \alpha : [a, b] \to \mathbb{R} \setminus \{0\}$, $\alpha: [a, b] \to \mathbb{R}^2$ geschlossene Kurve, $v$ glattes Vektorfeld
+FF: (a) seien \alpha_0, \alpha_1: [a, b] \to \mathbb{R}^2$ geschlossene Kurven, $v_0, v_1$ Vektorfelder auf $\mathbb{R}^2$ mit $v_i \neq 0$ entlang $\alpha_i$, es existiere eine Homotopie $H$ von $\alpha_0$ zu $\alpha_1$ und eine Homotopie $V:[0, 1] \times \mathbb{R}^2 \to \mathbb{R}^2$ von $v_0(x) = V(0, x) zu $v_1(x) = V(1, x)$ XXXXXXXXXXXXXXX \\(b) ist $R \subseteq \mathbb{R}^2$ kompakt mit glattem Rand $\partial R$ und $v$ ein Vektorfeld mit $v \neq 0$ auf ganz $R$, dann ist $ind(v, \partial R) = 0$
+I: Anzahl der Rotationen von $v$ entlang $\alpha$
+V: $w(\alpha)$ ist die Windungszahl von $\alpha$
 
 
 (, Globale Theorie ebener Kurven)
+
+
+(, Globale Theorie ebener Kurven)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

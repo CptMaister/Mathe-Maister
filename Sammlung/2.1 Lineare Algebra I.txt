@@ -21,27 +21,27 @@ $M^n = \underbrace{ M \times ... \times M }_{n-mal}= \{(m_1, ... , m_n)|m_i \in 
 Bsp.: $\mathbb{R}_2$ heißt euklidische Ebene
 
 Gerade in $\mathbb{R}^2$
-$A \subset \mathbb{R}^2 \Leftrightarrow A = \{(x,y) \in \mathbb{R} | xa + yb = c ,\> a,b,c \in \mathbb{R}\}$
+$A \subseteq \mathbb{R}^2 \Leftrightarrow A = \{(x,y) \in \mathbb{R} | xa + yb = c ,\> a,b,c \in \mathbb{R}\}$
 
 Gerade in $\mathbb{R}^n$
-$g \subset \mathbb{R}^n \Leftrightarrow \exists u, v \in \mathbb{R}^n, v\neq 0: g = u + \mathbb{R}v$
+$g \subseteq \mathbb{R}^n \Leftrightarrow \exists u, v \in \mathbb{R}^n, v\neq 0: g = u + \mathbb{R}v$
 FF: Ebene analog
 
 Ebene in $\mathbb{R}^3$
-$E \subset \mathbb{R}^3 Ebene \Leftrightarrow E = \{(x,y,z) \in \mathbb{R}^3 | xa_1 + ya_2 + za_3 =d \>,d \in \mathbb{R}^3, a_i \in \mathbb{R} \> \forall i \in \{1,2,3\}\}$
+$E \subseteq \mathbb{R}^3 Ebene \Leftrightarrow E = \{(x,y,z) \in \mathbb{R}^3 | xa_1 + ya_2 + za_3 =d \>,d \in \mathbb{R}^3, a_i \in \mathbb{R} \> \forall i \in \{1,2,3\}\}$
 
 Dimension von Vektorraum A
 $dim(A)$ 
 Bsp.: $dim(\mathbb{R}^n) = n$
 
 Hyperebene in $\mathbb{R}^n§
-$H \subset \mathbb{R}^n \;in \;\mathbb{R}^n\; ist \;H = \{(x_1, ... ,x_n) \in \mathbb{R}^n | a_1x_1 + ... + a_nx_n = b \>,b\in \mathbb{R}^n, a_1,...,a_n,  \in \mathbb{R}, (a_1,...,a_n) \neq 0\}$
+$H \subseteq \mathbb{R}^n \;in \;\mathbb{R}^n\; ist \;H = \{(x_1, ... ,x_n) \in \mathbb{R}^n | a_1x_1 + ... + a_nx_n = b \>,b\in \mathbb{R}^n, a_1,...,a_n,  \in \mathbb{R}, (a_1,...,a_n) \neq 0\}$
 
 Abbildung
 $f: X\to Y \:, x\mapsto f(x) \:, \forall x \in X \: \exists! y \in Y: \: f(x) = y$
 
 Graph von f 
-$\{(x,f(x)) | x \in X\} \subset X \times Y$
+$\{(x,f(x)) | x \in X\} \subseteq X \times Y$
 
 Menge der Abbildungen von X nach Y
 $Abb(X,Y)$
@@ -114,4 +114,53 @@ Ist eine nichtleere Menge M mit einer assoziativen Verknüpfung $\ast$ und neutr
 Gruppe
 nichtleere Menge M mit Verknüpfung $\ast$ und Eigenschaften \\ i) Abgeschlossenheit \\ ii) Assoziativität \\ iii) Neutrales Element \\ iv) Inverse Elemente für alle Elemente aus M
 FF: Ist Monoid in dem jedes Element invertierbar ist. 
-Bsp.: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x) \: mit \: \gamma (X) = \{f \in Abb(X,X) | f \: bijektiv\} \: keine \: Gruppe \: ist \:( \mathbb{N}, + , 0), \: da \: keine \: Inversen \: vorhanden$
+Bsp.: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x) \: mit \: \gamma (X) = \{f \in Abb(X,X) | f \: bijektiv\} \: 
+
+Gruppe G heißt abelsch
+Gruppe G ist kommutativ
+
+symmetrische Gruppe vom Grad n
+$S_n$
+I: Gruppe aller Permutationen von n-Elementen
+
+Diedergruppe
+$D_n , \: n \ge 3$
+I: Gruppe der n Spiegelungen und n Drehungen 
+FF: Jede Diedergruppe wird von nur zwei Spiegelungen erzeugt \\ $D_n \subseteq S_n$
+
+Verknüpfungstafel einer Gruppe
+Methode, um Abgeschlossenheit, neutrale Elemente, Inverse und Kommutativität anschaulich zu prüfen
+FF: Ist Gruppe G assoziativ und alle oberen Eigenschaften gelten, dann ist G eine abelsche Gruppe
+
+Untergruppe von Gruppe G
+$H \subseteq G$, G Gruppe, ist nichtleere Menge und erfüllt folgende Eigenschaften: \\ i) Abgeschlossenheit \\ ii) Neutrales Element \\ iii) Inverse
+FF: Untergruppe vererbt Assoziativität und (wenn vorhanden) Kommutativität von G
+
+Gruppenhomomorphismus
+$(G, \ast ), \: (G \,', \ast) Gruppen, \: f: G \rightarrow G \, ' \: , mit \: \forall x,y \in G: f(x \ast y) = f(x) \ast' f(y)$
+
+Gruppenisomorphismus 
+bijektiver Gruppenhomomorphismus
+FF: Wenn Gruppe G isomorph zu G', dann ist $f(e) = e \, ' \: , \forall a \in G: f(a^{-1}) = f(a)^{-1} \: , f^{-1}$ auch Gruppenisomorphismus \\ schreibe $G \cong G \, '$
+
+Die von $a \in G$ , $(G, \ast )$ Gruppe, erzeugte Untergruppe 
+$< \! a \! >$, $a \in$ Gruppe G 
+F: $:= \{a^m | m \in \mathbb{Z} \}$ 
+FF: $a^n = \underbrace{a \ast ... \ast a}_{n-mal}$ , $a^0 = e$ , $e^{-n} = \underbrace{a^{-1} \: \ast ... \ast \: a^{-1}}_{n-mal}$
+
+zyklische Gruppe
+$\exists a \in G: \: < \! a \! > \: = G$
+FF: zyklische Gruppen sind abelsch
+Bsp.: $( \mathbb{Z} , +)$ Gruppe: $< \! 1 \! > \: = \: \mathbb{Z}$ , $(n \mathbb{Z} , +)$ Gruppe: $< \! n \!> \: = \: n \mathbb{Z}$
+
+Satz von Langrange
+$|U| \: \Big\vert \: |G|$ für endliche Gruppe G und Untergruppe U
+
+Ring
+$(R, +)
+
+
+
+
+
+
