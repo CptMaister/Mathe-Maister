@@ -1,5 +1,5 @@
 Datum der vorläufigen Vervollständigung: Februar 2019
-ETA: gegen Dezember 2018
+Anki Deck ETA: gegen Weihnachten 2018
 
 Name
 Beschreibung
@@ -9,7 +9,7 @@ T: Trivia
 FF: FunFacts
 Bsp: Beispiele
 Les: Lesehinweis
-V: Verwendete Def. etc
+V: Verwendete Def. etc, verschmolzen zu "Les:"
 Lit: Nummer aus der verwendeten Literatur
 
 Literatur: Forster Analysis 3 (Auflage? ("nicht die alten blauen Auflagen"))
@@ -63,8 +63,7 @@ $\mathfrak{Q}(\mathbb{R}^n)$
 F: $:= \{\bigcup \limits_{i=1}^{m} Q(a^{(i)}, b^{(i)}) \> | \> m \in \mathbb{N}, a^{(i)}, b^{(i)} \in \mathbb{R}^n \; \forall i\}$
 FF: $\mathfrak{Q}(\mathbb{R})$ ist keine $\sigma$-Algebra, nichtmal Algebra, nur Ring, da $\bigcup \limits_{i=1}^{\infty} [i, i+1) \notin \mathfrak{Q}(\mathbb{R})$ und $\mathbb{R} \notin \mathfrak{Q}$
 I: Endliche Vereinigung n-dimensionaler halboffener Quader.
-L: Die $^{(i)}s$ sind hier als Index zu verstehen. Nicht runtergesetzt, da sonst verwechselbar mit der i-ten Komponente von $a$ oder $b$.
-V: Quadermenge $Q(a, b)$
+Les: Die $^{(i)}s$ sind hier als Index zu verstehen. Nicht runtergesetzt, da sonst verwechselbar mit der i-ten Komponente von $a$ oder $b$. \\$Q(a, b)$ ist die Quadermenge.
 Lit: 1.5
 
 $\sigma$-Algebra (Def., Mengenalgebren)
