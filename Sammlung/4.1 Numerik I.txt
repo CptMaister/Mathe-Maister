@@ -53,6 +53,6 @@ $\phi:[a, b] \to \mathbb{R}$ sei Selbstabbildung auf abgeschlossenem Intervall $
 
 Sekantenverfahren / Regula falsi (Formel, Skalare Gleichungen)
 $x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} f(x_n), n > 1$
-FF: ein lustiger Satz (2.18) hat noch viele Infos zu Konvergenzbedingungen
+FF: ein lustiger Satz (2.18) hat noch viele Infos zu Konvergenzbedingungen XXXXXXXXXXX
 
 bis 30.10.18

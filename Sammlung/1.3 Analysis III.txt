@@ -1,6 +1,12 @@
 Datum der vorläufigen Vervollständigung: Februar 2019
 Anki Deck ETA: gegen Weihnachten 2018
 
+Groß- und Kleinschreibung und Punkte am Ende eines Felds:
+ - Erste Zeile beginnt immer groß
+ - alle anderen Felder klein, wenn kein Nomen (also normale Rechtschreibung)
+ - Keine Punkte am Ende von Feldern
+ - bei Sätzen die ersten zwei Zeilen groß, Punkte nach Belieben setzen
+
 Name
 Beschreibung
 F: Formel
@@ -13,6 +19,7 @@ V: Verwendete Def. etc, verschmolzen zu "Les:"
 Lit: Nummer aus der verwendeten Literatur
 
 Literatur: Forster Analysis 3 (Auflage? ("nicht die alten blauen Auflagen"))
+
 
 1.3 Analysis III
 

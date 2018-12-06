@@ -24,149 +24,165 @@ Regel von Sarrus
 
 2.1 Lineare Algebra I
 
-Mengenprodukt
-$M^n = \underbrace{ M \times ... \times M }_{n-mal}= \{(m_1, ... , m_n)|m_i \in M_i\}$
-Bsp: $\mathbb{R}_2$ heißt euklidische Ebene
+Mengenprodukt (Def., Mengen, Abbildungen, Relationen)
+$M^n = \underbrace{ M \times ... \times M }_{n-mal}= \{(m_1, ... , m_n) \> | \> m_i \in M_i\}$
+Bsp: $\mathbb{R}^2$ heißt euklidische Ebene
 
-Gerade in $\mathbb{R}^2$
-$A \subseteq \mathbb{R}^2 \Leftrightarrow A = \{(x,y) \in \mathbb{R} | xa + yb = c ,\> a,b,c \in \mathbb{R}\}$
+Gerade in $\mathbb{R}^2$ (Def., Vektorräume)
+$A \subseteq \mathbb{R}^2, A = \{(x,y) \in \mathbb{R} \> | \> xa + yb = c ,\> a,b,c \in \mathbb{R}\}$
 
-Gerade in $\mathbb{R}^n$
-$g \subseteq \mathbb{R}^n \Leftrightarrow \exists u, v \in \mathbb{R}^n, v\neq 0: g = u + \mathbb{R}v$
+Gerade in $\mathbb{R}^n$ (Def., Vektorräume)
+$g \subseteq \mathbb{R}^n, \exists u, v \in \mathbb{R}^n, v\neq 0: g = u + \mathbb{R}v$
 FF: Ebene analog
 
-Ebene in $\mathbb{R}^3$
-$E \subseteq \mathbb{R}^3 Ebene \Leftrightarrow E = \{(x,y,z) \in \mathbb{R}^3 | xa_1 + ya_2 + za_3 =d \>,d \in \mathbb{R}^3, a_i \in \mathbb{R} \> \forall i \in \{1,2,3\}\}$
+Ebene in $\mathbb{R}^3$ (Def., Vektorräume)
+$E \subseteq \mathbb{R}^3 Ebene \Leftrightarrow E = \{(x,y,z) \in \mathbb{R}^3 \> | \> xa_1 + ya_2 + za_3 =d \>,d \in \mathbb{R}^3, a_i \in \mathbb{R} \> \forall i \in \{1,2,3\}\}$
 
-Dimension von Vektorraum A
+Dimension von Vektorraum A (Def., Vektorräume)
 $dim(A)$ 
 Bsp: $dim(\mathbb{R}^n) = n$
+FF: $dim(A)$ ist die Anzahl der Basisvektoren einer beliebigen Basis von A
 
-Hyperebene in $\mathbb{R}^n§
-$H \subseteq \mathbb{R}^n \;in \;\mathbb{R}^n\; ist \;H = \{(x_1, ... ,x_n) \in \mathbb{R}^n | a_1x_1 + ... + a_nx_n = b \>,b\in \mathbb{R}^n, a_1,...,a_n,  \in \mathbb{R}, (a_1,...,a_n) \neq 0\}$
+Hyperebene in $\mathbb{R}^n$ (Def., Vektorräume)
+$H \subseteq \mathbb{R}^n$ ist $\;H = \{(x_1, ... ,x_n) \in \mathbb{R}^n \> | \> a_1x_1 + ... + a_nx_n = b, \> b\in \mathbb{R}^n, a_1,...,a_n,  \in \mathbb{R}, (a_1,...,a_n) \neq 0\}$
+I: also ein Untervektorraum, der genau eine Dimension kleiner ist als der ihn umfassende Vektorraum
 
-Abbildung
+Abbildung (Def., Mengen, Abbildungen, Relationen)
 $f: X\to Y \:, x\mapsto f(x) \:, \forall x \in X \: \exists! y \in Y: \: f(x) = y$
+Les: für alle folgenden Karten sei $f$ eine allgemeine Abbildung von $X$ nach $Y$
 
-Graph von f 
-$\{(x,f(x)) | x \in X\} \subseteq X \times Y$
+Graph von Abbildung $f:X \to Y$ (Def., Mengen, Abbildungen, Relationen)
+$\{(x,f(x)) \> | \> x \in X\} \subseteq X \times Y$
 
-Menge der Abbildungen von X nach Y
+Menge der Abbildungen von X nach Y (Def., Mengen, Abbildungen, Relationen)
 $Abb(X,Y)$
 
-Identität
+Identität (Def., Mengen, Abbildungen, Relationen)
 $id_x:X \to X,x \mapsto x$
 
-Komposition 
-$g \circ f: x \mapsto g(f(x)), \: f \circ g: X \xrightarrow{f} Y \xrightarrow{g} Z, \: x \mapsto f(x) \mapsto g(f(x))$
-FF: Komposition von Abbildungen ist assoziativ. 
+Komposition (Def., Mengen, Abbildungen, Relationen)
+$g \circ f: x \mapsto g(f(x)), \: g \circ f: X \xrightarrow{f} Y \xrightarrow{g} Z, \: x \mapsto f(x) \mapsto g(f(x))$
+I: Hintereinanderausführung von Abbildungen, angefangen von rechts
+FF: Komposition von Abbildungen ist assoziativ
+Les: $g:Y \to Z$
 
-Injektivität
+Injektivität (Def., Mengen, Abbildungen, Relationen)
 $\forall x_1, x_2 \in X: f(x_1) = f(x_2) \Rightarrow x_1 = x_2$
 
-Surjektivität
+Surjektivität (Def., Mengen, Abbildungen, Relationen)
 $\forall y \in Y \: \exists x \in X: f(x) = y$
 
-Bijektivität
-Abbildung ist injektiv und surjektiv.
+Bijektivität (Def., Mengen, Abbildungen, Relationen)
+Abbildung ist injektiv und surjektiv
 
-Bild von A unter f
-$f(A) = \{y \in Y | \exists x \in A: f(x) = y \}$
+Bild von A unter f (Def., Mengen, Abbildungen, Relationen)
+$f(A) = \{y \in Y \> | \> \exists x \in A: f(x) = y \}$
+Les: $A \subseteq X$
 
-Urbild 
-$f^{-1} (B) = \{x \in X | f(x) \in B \}$
-FF: Urbild bildet nicht Elemente auf etwas ab, sondern Mengen auf Mengen. 
+Urbild (Def., Mengen, Abbildungen, Relationen)
+$f^{-1} (B) = \{x \in X \> | \> f(x) \in B \}$
+FF: Urbild bildet nicht Elemente auf etwas ab, sondern Mengen auf Mengen
+Les: $B \subseteq Y$
 
-Umkehrabbildung
-$f:X \to Y \: bijektiv, \: dann \: f^{-1}:Y \to X, \: y \mapsto x \: mit \: f(x) = y$
+Umkehrabbildung (Def., Mengen, Abbildungen, Relationen)
+$f^{-1}:Y \to X, \: y \mapsto x$ mit $f(x) = y$ bijektiv
 
-Ordnungsrelation
-Eine Relation, die reflexiv, antisymmetrisch und transitiv ist. 
+Ordnungsrelation (Def., Mengen, Abbildungen, Relationen)
+eine Relation, die reflexiv, antisymmetrisch und transitiv ist
 
-Äquivalenzrealtion
-Eine Relation, die reflexiv, symmetrisch und transitiv ist. 
+Äquivalenzrealtion (Def., Mengen, Abbildungen, Relationen)
+eine Relation, die reflexiv, symmetrisch und transitiv ist
 
-Reflexivität
+Reflexivität (Def., Mengen, Abbildungen, Relationen)
 $\forall x \in X: x \sim x$
 
-Transitivität
-$\forall x,y,z \in X: x \sim y \land y \sim z \Rightarrow x \sim y$
+Transitivität (Def., Mengen, Abbildungen, Relationen)
+$\forall x,y,z \in X: x \sim y \land y \sim z \Rightarrow x \sim z$
 
-Symmetrie
+Symmetrie (Def., Mengen, Abbildungen, Relationen)
 $\forall x,y \in X: x \sim y \Leftrightarrow y \sim x$
 
-Antisymmetrie
+Antisymmetrie (Def., Mengen, Abbildungen, Relationen)
 $\forall x,y \in X: x \sim y \land y \sim x \Rightarrow x = y$
 
-von x erzeugte Äquivalenzklasse 
+Von x erzeugte Äquivalenzklasse (Def., Mengen, Abbildungen, Relationen)
 $[x]$
-F: $:= \{y \in M | y \sim x \} \: , x \in M$
+F: $:= \{y \in M \> | \> y \sim x \}, \; x \in M$
 FF: disjunkt oder gleich zu anderen Äquivalenzklassen
 
-Verknüpfung auf M
-M nichtleer, $Abb.\ast : M \times M \to M , \: (a,b) \mapsto a \ast b$
+Verknüpfung auf M (Def., Mengen, Abbildungen, Relationen)
+M nichtleer, Abbildung $\ast : M \times M \to M , \: (a,b) \mapsto a \ast b$
 
-neutrales Element
-$ e \in M$ mit $\forall a \in M: e \ast a = a = a \ast e$
-Bsp.: 0 bei Addition, 1 bei Multiplikation, id bei Abbildung 
+Neutrales Element (Def., Gruppen, Ringe, Körper)
+$e \in M$ mit $\forall a \in M: e \ast a = a = a \ast e$
+Bsp.: 0 bei Addition, 1 bei Multiplikation, $id$ bei Abbildungen
 
-Inverse Elemente
-$\forall a \in M \: \exists b \in M: b \ast a = e = b \ast a$ 
+Inverses Element von $a \in M$ (Def., Gruppen, Ringe, Körper)
+$b \in M: b \ast a = e = b \ast a$
+FF: hierbei handelt es sich um ein rechts- und gleichzeitig linksinverses Element. Es gibt auch Abbildungen mit Elementen, die nur rechts- oder nur linksinvers sind
 
-Abgeschlossenheit
+Abgeschlossenheit (Def., Gruppen, Ringe, Körper)
 $\forall a,b \in (M, \ast ): a \ast b \in M$
 
-Monoid
-Ist eine nichtleere Menge M mit einer assoziativen Verknüpfung $\ast$ und neutralem Element e. 
+Monoid (Def., Gruppen, Ringe, Körper)
+eine nichtleere Menge $M$ mit einer assoziativen Verknüpfung $\ast$ auf $M$ und neutralem Element $e$
+Les: Abgeschlossenheit der Verknüpfung wird als selbstverständlich angesehen und deswegen oft nicht in Definitionen genannt. Sie ist selbstverständlich trotzdem notwendig
 
-Gruppe
+Gruppe (Def., Gruppen, Ringe, Körper)
 nichtleere Menge M mit Verknüpfung $\ast$ und Eigenschaften \\ i) Abgeschlossenheit \\ ii) Assoziativität \\ iii) Neutrales Element \\ iv) Inverse Elemente für alle Elemente aus M
-FF: Ist Monoid in dem jedes Element invertierbar ist. 
-Bsp: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x) \: mit \: \gamma (X) = \{f \in Abb(X,X) | f \: bijektiv\} \: 
+FF: also ein Monoid in dem jedes Element invertierbar ist 
+Bsp: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x)$ mit $\gamma (X) = \{f \in Abb(X,X) \> | \> f \: \text{bijektiv}\}$
 
-Gruppe G heißt abelsch
+Gruppe G heißt abelsch (Def., Gruppen, Ringe, Körper)
 Gruppe G ist kommutativ
 
-symmetrische Gruppe vom Grad n
+Symmetrische Gruppe vom Grad n (Def., Gruppen, Ringe, Körper)
 $S_n$
-I: Gruppe aller Permutationen von n-Elementen
+I: Gruppe aller Permutationen von n vielen Elementen
+FF: $|S_n| = n!$
 
-Diedergruppe
-$D_n , \: n \ge 3$
-I: Gruppe der n Spiegelungen und n Drehungen 
-FF: Jede Diedergruppe wird von nur zwei Spiegelungen erzeugt \\ $D_n \subseteq S_n$
+Diedergruppe (Def., Gruppen, Ringe, Körper)
+$D_n$
+I: Gruppe aus Abbildungen mit allen Spiegelungen und Drehungen, die ein n-Eck im $\mathbb{R}^2$ in sich selbst abbildet
+FF: $n \ge 3$\\jede Diedergruppe wird von nur zwei Spiegelungen erzeugt \\ $D_n \subseteq S_n$, Gleichheit nur bei n = 3 \\ $D_n \subseteq O(n)$ \\ $|D_n| = 2n$
 
-Verknüpfungstafel einer Gruppe
-Methode, um Abgeschlossenheit, neutrale Elemente, Inverse und Kommutativität anschaulich zu prüfen
-FF: Ist Gruppe G assoziativ und alle oberen Eigenschaften gelten, dann ist G eine abelsche Gruppe
+Verknüpfungstafel einer Gruppe (Def., Gruppen, Ringe, Körper) ~~~~~
+Methode, um zum Beispiel Abgeschlossenheit, neutrale Elemente, Inverse und Kommutativität einer Menge $M$ mit einer Verknüpfung $\ast$ anschaulich zu prüfen
+FF: ist $\ast$ auf $M$ assoziativ und alle oberen Eigenschaften gelten, dann ist $(M, \ast)$ eine abelsche Gruppe \\Verknüpfungstafeln kann man auch zum Beispiel für Körper aufstellen
+Bsp: Tafel einer Gruppe mit 3 Elementen: \\XXXXXXXX \\ \\Tafeln eines Körpers mit 4 Elementen: \\XXXXXXX \\ \\dies sind die einzigen Möglichkeiten für eine Gruppe mit 3 Elementen und einen Körper mit 4 Elementen (bis auf Isomorphie)
 
-Untergruppe von Gruppe G
-$H \subseteq G$, G Gruppe, ist nichtleere Menge und erfüllt folgende Eigenschaften: \\ i) Abgeschlossenheit \\ ii) Neutrales Element \\ iii) Inverse
+Untergruppe von Gruppe G (Def., Gruppen, Ringe, Körper)
+$H \subseteq G$, G Gruppe, ist nichtleere Menge und erfüllt folgende Eigenschaften: \\ i) Abgeschlossenheit \\ ii) Neutrales Element \\ iii) Inverse Elemente für alle Elemente aus H
 FF: Untergruppe vererbt Assoziativität und (wenn vorhanden) Kommutativität von G
 
-Gruppenhomomorphismus
-$(G, \ast ), \: (G \,', \ast) Gruppen, \: f: G \rightarrow G \, ' \: , mit \: \forall x,y \in G: f(x \ast y) = f(x) \ast' f(y)$
+Gruppenhomomorphismus (Def., Gruppen, Ringe, Körper)
+$(G, \ast ), \: (G \,', \ast)$ Gruppen, $f: G \rightarrow G \, '$, mit $\forall x,y \in G: f(x \ast y) = f(x) \ast' f(y)$
 
-Gruppenisomorphismus 
+Gruppenisomorphismus (Def., Gruppen, Ringe, Körper)
 bijektiver Gruppenhomomorphismus
-FF: Wenn Gruppe G isomorph zu G', dann ist $f(e) = e \, ' \: , \forall a \in G: f(a^{-1}) = f(a)^{-1} \: , f^{-1}$ auch Gruppenisomorphismus \\ schreibe $G \cong G \, '$
+FF: wenn $f$ Isomorphismus zwischen Gruppe $G$ und $G \, '$, dann ist $f(e) = e \, ' \: , \forall a \in G: f(a^{-1}) = f(a)^{-1} \: , f^{-1}$ auch Gruppenisomorphismus
+T: Gruppe $G$ isomorph zu $G \, ' \Leftrightarrow \exists f: G \to G \, '$ Isomorphismus. Schreibe $G \cong G \, '$ 
 
-Die von $a \in G$ , $(G, \ast )$ Gruppe, erzeugte Untergruppe 
-$< \! a \! >$, $a \in$ Gruppe G 
-F: $:= \{a^m | m \in \mathbb{Z} \}$ 
+Die von $a \in G$, $(G, \ast )$ Gruppe, erzeugte Untergruppe (Def., Gruppen, Ringe, Körper)
+$< \! a \! >$, $a \in$ Gruppe G
+F: $:= \{a^m \> | \> m \in \mathbb{Z} \}$ 
 FF: $a^n = \underbrace{a \ast ... \ast a}_{n-mal}$ , $a^0 = e$ , $e^{-n} = \underbrace{a^{-1} \: \ast ... \ast \: a^{-1}}_{n-mal}$
 
-zyklische Gruppe
-$\exists a \in G: \: < \! a \! > \: = G$
+Zyklische Gruppe (Def., Gruppen, Ringe, Körper)
+$\exists a \in G: \: < \! a \! > \: = G$, $G$ Gruppe
 FF: zyklische Gruppen sind abelsch
-Bsp: $( \mathbb{Z} , +)$ Gruppe: $< \! 1 \! > \: = \: \mathbb{Z}$ , $(n \mathbb{Z} , +)$ Gruppe: $< \! n \!> \: = \: n \mathbb{Z}$
+Bsp: $( \mathbb{Z} , +)$ Gruppe: $< \! 1 \! > \: = \: \mathbb{Z}$, $(n \mathbb{Z} , +)$ Gruppe: $< \! n \!> \: = \: n \mathbb{Z}$
 
-Satz von Langrange
+Satz von Langrange (Satz, Gruppen, Ringe, Körper)
 $|U| \: \Big\vert \: |G|$ für endliche Gruppe G und Untergruppe U
+Les: die Anzahl der Elemente in U teilt die Anzahl der Elemente in U
 
-Ring
+--A
+
+Ring (Def., Gruppen, Ringe, Körper)
 $(R, +)
 
+--J
 
 
 
