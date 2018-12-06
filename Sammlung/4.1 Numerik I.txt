@@ -1,5 +1,24 @@
 Datum der vorläufigen Vervollständigung: Februar 2019
 Eher nur Formelsammlung
+Anki Deck ETA: Gerade am Testen
+
+Groß- und Kleinschreibung und Punkte am Ende eines Felds:
+ - Erste Zeile beginnt immer groß
+ - alle anderen Felder klein, wenn kein Nomen (also normale Rechtschreibung)
+ - Keine Punkte am Ende von Feldern
+ - bei Sätzen die ersten zwei Zeilen groß, Punkte nach Belieben setzen
+
+Name
+Beschreibung
+F: Formel
+I: Interpretation
+T: Trivia
+FF: FunFacts
+Bsp: Beispiele
+Les: Lesehinweis
+V: Verwendete Def. etc, verschmolzen zu "Les:"
+Lit: Nummer aus der verwendeten Literatur
+
 
 4.1 Numerik I (Einführung in die Numerik, bei Daniel Peterseim, WiSe18/19)
 
@@ -7,19 +26,21 @@ Menge der Gleitkommazahlen auf einem Computer (Def., Computerarithmetik)
 $\mathbb{R}(t, s)$
 
 Gleitkommazahl (Def., Computerarithmetik)
-$x = f 2^e = \pm (\sum_{k=0}^{\infty} b_{-k} 2^{-k}) 2^e$ mit Mantisse $f = \pm (b_0 . b_{-1} b_{-2} ... b_{-t+1})_2$ und Exponent $e = \pm(b_{s-1}, b_{s-2}...b_0)_2$
-auch bekannt als Fließkommazahlen
+$x = f \, 2^e$ mit Mantisse $f$ und Exponent $e$
+F: $f \, 2^e = \pm (\sum \limits_{k=0}^{t-1} b_{-k} 2^{-k}) 2^e$\\$f = \pm (b_0 . b_{-1} b_{-2} ... b_{-t+1})_2$\\$e = \pm(b_{s-1}, b_{s-2}...b_0)_2$ mit $x \in \mathbb{R}(t, s)$
+T: auch bekannt als Fließkommazahlen
 
 Symmetrisches Runden im Binärsystem (Formel, Computerarithmetik)
 $x^* = rd(x) = chop(x + 2^{-t} 2^e)$
-letzte Stellen von x: ...?0 oder ...?1, durch $+ 2^{-t} 2^e$ dann ...?1 oder ...(?+1)0, durch $chop$ dann ...? oder ...(?+1)
+I: letzte Stellen von x: ...?0 oder ...?1, durch $+ 2^{-t} 2^e$ dann ...?1 oder ...(?+1)0, durch $chop$ dann ...? oder ...(?+1)
+Les: $chop(x)$ entfernt die letzte Nachkommastelle von x
 
-Relative Maschinenungenauigkeit (Def., Computerarithmetik)
+Relative Maschinengenauigkeit (Def., Computerarithmetik)
 $eps := 2^{-t}$
-bestimmt die Genauigkeit von Gleitkommarechnungen auf dem zugehörigen Rechner.
+I: bestimmt die Genauigkeit von Gleitkommarechnungen auf dem zugehörigen Rechner
 
 Bisektionsverfahren (Satz / Formel, Skalare Gleichungen)
-Sei $f:[a, b] \to \mathbb{R}$ stetig und $f(a)f(b) < 0$. Die Folge $(x_n)_{n \in \mathbb{N}}$, deren Glieder durch $x_n = frac{1}{2}(a_n + b_n)$ mit $a_{n+1} = a_n, b_{n+1} = x_n, falls f(a)f(x_n) \le 0$ und $a_{n+1} = x_n, b_{n+1} = b_n, sonst$ gegeben sind, erfüllt: $$\lim\limits_{n \to \infty} x_n = \bar{x}, f(\bar{x}) = 0$$ $$|x_n -\bar{x}| \le \frac{1}{2}(b_n - a_n) = \frac{1}{2^{n+1}}(b_0 - a_0)$$ Jedes Intervall $[a_n, b_n]$ enthält die Nullstelle $\bar{x}$.
+Sei $f:[a, b] \to \mathbb{R}$ stetig und $f(a)f(b) < 0$. Die Folge $(x_n)_{n \in \mathbb{N}}$, deren Glieder durch $x_n = \frac{1}{2}(a_n + b_n)$ mit $a_{n+1} = a_n, b_{n+1} = x_n$, falls $f(a)f(x_n) \le 0$ und $a_{n+1} = x_n, b_{n+1} = b_n$, sonst, gegeben sind, erfüllt: $$\lim\limits_{n \to \infty} x_n = \bar{x}, f(\bar{x}) = 0$$ $$|x_n -\bar{x}| \le \frac{1}{2}(b_n - a_n) = \frac{1}{2^{n+1}}(b_0 - a_0)$$ Jedes Intervall $[a_n, b_n]$ enthält die Nullstelle $\bar{x}$.
 
 Newton-Verfahren (Formel, Skalare Gleichungen)
 $x_{n+1} = x_n - \frac{f(x_n}{f'(x_n)}$
@@ -32,6 +53,6 @@ $\phi:[a, b] \to \mathbb{R}$ sei Selbstabbildung auf abgeschlossenem Intervall $
 
 Sekantenverfahren / Regula falsi (Formel, Skalare Gleichungen)
 $x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})} f(x_n), n > 1$
-ein lustiger Satz (2.18) hat noch viele Infos zu Konvergenzbedingungen
+FF: ein lustiger Satz (2.18) hat noch viele Infos zu Konvergenzbedingungen
 
 bis 30.10.18

@@ -18,6 +18,7 @@ Les: Lesehinweis
 V: Verwendete Def. etc, verschmolzen zu "Les:"
 Lit: Nummer aus der verwendeten Literatur
 
+
 3.1 Geometrie I (Einführung in die Geometrie, bei Kai Cieliebak, WiSe18/19)
 
 Kurve (Def., Lokale Kurventheorie)

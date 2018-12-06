@@ -1,5 +1,11 @@
 Datum der vorläufigen Vervollständigung: Februar 2019
-ETA: gegen Dezember 2018
+Anki Deck ETA: Gerade am Testen
+
+Groß- und Kleinschreibung und Punkte am Ende eines Felds:
+ - Erste Zeile beginnt immer groß
+ - alle anderen Felder klein, wenn kein Nomen (also normale Rechtschreibung)
+ - Keine Punkte am Ende von Feldern
+ - bei Sätzen die ersten zwei Zeilen groß, Punkte nach Belieben setzen
 
 Name
 Beschreibung
@@ -8,6 +14,9 @@ I: Interpretation
 T: Trivia
 FF: FunFacts
 Bsp: Beispiele
+Les: Lesehinweis
+V: Verwendete Def. etc, verschmolzen zu "Les:"
+Lit: Nummer aus der verwendeten Literatur
 
 
 Regel von Sarrus
@@ -15,10 +24,9 @@ Regel von Sarrus
 
 2.1 Lineare Algebra I
 
-
 Mengenprodukt
 $M^n = \underbrace{ M \times ... \times M }_{n-mal}= \{(m_1, ... , m_n)|m_i \in M_i\}$
-Bsp.: $\mathbb{R}_2$ heißt euklidische Ebene
+Bsp: $\mathbb{R}_2$ heißt euklidische Ebene
 
 Gerade in $\mathbb{R}^2$
 $A \subseteq \mathbb{R}^2 \Leftrightarrow A = \{(x,y) \in \mathbb{R} | xa + yb = c ,\> a,b,c \in \mathbb{R}\}$
@@ -32,7 +40,7 @@ $E \subseteq \mathbb{R}^3 Ebene \Leftrightarrow E = \{(x,y,z) \in \mathbb{R}^3 |
 
 Dimension von Vektorraum A
 $dim(A)$ 
-Bsp.: $dim(\mathbb{R}^n) = n$
+Bsp: $dim(\mathbb{R}^n) = n$
 
 Hyperebene in $\mathbb{R}^n§
 $H \subseteq \mathbb{R}^n \;in \;\mathbb{R}^n\; ist \;H = \{(x_1, ... ,x_n) \in \mathbb{R}^n | a_1x_1 + ... + a_nx_n = b \>,b\in \mathbb{R}^n, a_1,...,a_n,  \in \mathbb{R}, (a_1,...,a_n) \neq 0\}$
@@ -114,7 +122,7 @@ Ist eine nichtleere Menge M mit einer assoziativen Verknüpfung $\ast$ und neutr
 Gruppe
 nichtleere Menge M mit Verknüpfung $\ast$ und Eigenschaften \\ i) Abgeschlossenheit \\ ii) Assoziativität \\ iii) Neutrales Element \\ iv) Inverse Elemente für alle Elemente aus M
 FF: Ist Monoid in dem jedes Element invertierbar ist. 
-Bsp.: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x) \: mit \: \gamma (X) = \{f \in Abb(X,X) | f \: bijektiv\} \: 
+Bsp: $(\mathbb{Z}, + , 0), (\mathbb{Q}, \cdot , 1), (\gamma (X), \circ , id_x) \: mit \: \gamma (X) = \{f \in Abb(X,X) | f \: bijektiv\} \: 
 
 Gruppe G heißt abelsch
 Gruppe G ist kommutativ
@@ -151,7 +159,7 @@ FF: $a^n = \underbrace{a \ast ... \ast a}_{n-mal}$ , $a^0 = e$ , $e^{-n} = \unde
 zyklische Gruppe
 $\exists a \in G: \: < \! a \! > \: = G$
 FF: zyklische Gruppen sind abelsch
-Bsp.: $( \mathbb{Z} , +)$ Gruppe: $< \! 1 \! > \: = \: \mathbb{Z}$ , $(n \mathbb{Z} , +)$ Gruppe: $< \! n \!> \: = \: n \mathbb{Z}$
+Bsp: $( \mathbb{Z} , +)$ Gruppe: $< \! 1 \! > \: = \: \mathbb{Z}$ , $(n \mathbb{Z} , +)$ Gruppe: $< \! n \!> \: = \: n \mathbb{Z}$
 
 Satz von Langrange
 $|U| \: \Big\vert \: |G|$ für endliche Gruppe G und Untergruppe U
